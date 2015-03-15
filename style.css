@@ -1,0 +1,531 @@
+/**
+
+* Theme Name: Adomattic
+
+* Author: WebMobi technologies
+
+* Author URI: http://webmobitechnologies.info
+
+* Version: 1.0
+
+*/
+
+@font-face {
+    font-family: 'merriweather_sansregular';
+    src: url('font/MerriweatherSans-Regular-webfont.eot');
+    src: url('font/MerriweatherSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/MerriweatherSans-Regular-webfont.woff2') format('woff2'),
+         url('font/MerriweatherSans-Regular-webfont.woff') format('woff'),
+         url('font/MerriweatherSans-Regular-webfont.ttf') format('truetype'),
+         url('font/MerriweatherSans-Regular-webfont.svg#merriweather_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('font/Ubuntu-R-webfont.eot');
+    src: url('font/Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Ubuntu-R-webfont.woff2') format('woff2'),
+         url('font/Ubuntu-R-webfont.woff') format('woff'),
+         url('font/Ubuntu-R-webfont.ttf') format('truetype'),
+         url('font/Ubuntu-R-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('font/FiraSans-Regular-webfont.eot');
+    src: url('font/FiraSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/FiraSans-Regular-webfont.woff2') format('woff2'),
+         url('font/FiraSans-Regular-webfont.woff') format('woff'),
+         url('font/FiraSans-Regular-webfont.ttf') format('truetype'),
+         url('font/FiraSans-Regular-webfont.svg#fira_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('font/oswald.regular-webfont.eot');
+    src: url('font/oswald.regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/oswald.regular-webfont.woff2') format('woff2'),
+         url('font/oswald.regular-webfont.woff') format('woff'),
+         url('font/oswald.regular-webfont.ttf') format('truetype'),
+         url('font/oswald.regular-webfont.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Stela UT';
+
+    src: url('font/STELA_UT-webfont.eot');
+
+    src: url('font/STELA_UT-webfont.eot?#iefix') format('embedded-opentype'),
+
+    url('font/STELA_UT-webfont.woff2') format('woff2'),
+
+    url('font/STELA_UT-webfont.woff') format('woff'),
+
+    url('font/STELA_UT-webfont.ttf') format('truetype'),
+
+    url('font/STELA_UT-webfont.svg#stela_utregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Museo 300';
+
+    src: url('font/MUSEO300-REGULAR-webfont.eot');
+
+    src: url('font/MUSEO300-REGULAR-webfont.eot?#iefix') format('embedded-opentype'),
+
+    url('font/MUSEO300-REGULAR-webfont.woff2') format('woff2'),
+
+    url('font/MUSEO300-REGULAR-webfont.woff') format('woff'),
+
+    url('font/MUSEO300-REGULAR-webfont.ttf') format('truetype'),
+
+    url('font/MUSEO300-REGULAR-webfont.svg#museo300') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+
+
+.wel h3{ color:#FFF; font-size:30px; font-family:"ubunturegular";}
+
+.wel p{color:#FFF; font-size:17px; font-family:"ubunturegular"; line-height:30px; letter-spacing:0px; word-spacing:7px;}
+
+
+.top{margin-top:150px; min-height:410px; z-index: 1;}
+
+.dis{margin-top:30px; font-family:"ubunturegular"; text-align:center;}
+
+.mid{margin-top:20px;}
+
+.foot ul li a{color:#333; font-family:"ubunturegular"; letter-spacing:1px;}
+
+
+
+#scrollerota{ width:45%;}
+
+
+
+@media all and (min-width:1024px) and (max-width:3000px)
+
+{
+
+.head h4{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:50px; margin-top:60px; text-transform:uppercase;}
+
+.head h3{text-align:center; margin-top:50px; text-transform:uppercase;}
+
+.head p{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:14px; margin-top:70px; font-weight:bold; letter-spacing:4px; line-height:30px;}    
+.foot ul li {
+float: left;
+font-size: 13px;
+margin-left:17px;
+}
+
+
+}
+
+@media all and (min-width:768px) and (max-width:1024px)
+
+{
+
+#scrollerota{ width:50% !important;}        
+
+.head h4{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:40px; margin-top:30px; text-transform:uppercase;}
+
+.head h3{text-align:center; margin-top:50px; text-transform:uppercase;}
+
+.head p{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:14px; margin-top:50px; font-weight:bold; letter-spacing:4px; line-height:30px;}    
+.foot ul li {
+float: left;
+font-size: 11px;
+margin-left: 13px;
+}
+
+}
+
+@media all and (min-width:480px) and (max-width:768px)
+
+{
+#scrollerota{ width:70% !important;}        
+
+.head h4{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:20px; margin-top:20px; text-transform:uppercase;}
+
+.head h3{text-align:center; margin-top:50px; text-transform:uppercase;}    
+
+.head p{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:14px; margin-top:40px; font-weight:bold; letter-spacing:4px; line-height:30px;}
+
+.foot ul li {
+float: left;
+font-size: 11px;
+margin-left: 5px;
+}
+}
+
+@media all and (min-width:240px) and (max-width:480px)
+
+{
+
+#scrollerota{ width:100% !important;}
+
+.head h4{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:20px; margin-top:20px; text-transform:uppercase;}
+
+.head h3{text-align:center; margin-top:60px; text-transform:uppercase;}    
+
+.head p{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:14px; margin-top:40px; font-weight:bold; letter-spacing:4px; line-height:30px;}
+.foot ul li {
+font-size: 14px;
+} 
+
+
+}
+
+
+
+
+
+.btn{
+
+border: 1px solid;
+
+font-size: inherit;
+
+line-height: 1.5;
+
+margin-left: 5px;
+
+margin-right: 5px;
+
+transition: all 0.5s ease-out 0s;
+
+text-decoration: none;
+
+}
+
+.btn-big {
+
+background-clip: padding-box;
+
+border-radius: 10px 10px 0;
+
+font-size: 18px;
+
+line-height: 18px;
+
+padding: 11px 30px;
+
+z-index: 0;
+
+}
+
+.btn-white {
+
+background: none repeat scroll 0 0 transparent;
+                border-color: #fff;
+				border: 2px solid #fff;
+                color: #fff;
+				max-width:161px;
+				width:100%;
+
+}
+
+.btn-black {
+
+ background: none repeat scroll 0 0 transparent;
+                border-color: #666;
+				border:2px solid #666;
+                color: #666;
+				width:100%;
+				max-width:161px;
+				
+				}
+
+.btn-white:hover {
+
+background: none repeat scroll 0 0 #fff;
+
+color: #464646;
+
+}
+
+.btn-black:hover{
+
+background: none repeat scroll 0 0 #ccc;
+
+color: #000;
+
+}
+
+
+
+
+
+
+
+.top2{/*background:url(../images/top.jpg) no-repeat;*/ width:100%; min-height:420px; margin-top:50px;}
+
+/*.head h3{text-align:center; margin-top:50px;}    
+
+*//*.head h4{text-align:center; color:#fff; font-family:"Museo 300"; font-size:50px; margin-top:70px;}*/
+
+/*.head p{text-align:center; color:#fff; font-family:"open_sansregular"; font-size:14px; margin-top:70px; font-weight:bold; letter-spacing:4px; line-height:30px;}*/                
+
+
+
+.head2 h4{text-align:center; color:#666; font-family:"ubunturegular"; font-size:50px;  margin-bottom:20px; text-transform:uppercase;}
+
+.head2 p{text-align:center; color:#fff; font-family:"ubunturegular"; font-size:14px; margin-top:70px; font-weight:bold; letter-spacing:4px; line-height:30px;}                
+
+
+
+.key h2{text-align:center; color:#999; font-family:"ubunturegular"; font-size:25px; color:#666; margin:30px 0;}
+
+.key p{text-align:center; color:#999; font-family:"ubunturegular"; font-size:14px; color:#999; margin:30px 0;}
+
+
+
+.midd{text-align:center; color:#666    ; font-family:"ubunturegular"; font-size:14px; margin-top:10px !important; font-weight:bold; letter-spacing:2px; line-height:25px;}
+
+
+
+.top4{margin-top:40px; border-top:1px solid #eee; padding-top:40px;}
+
+.top4 p{text-align:center; color:#999; font-family:"ubunturegular"; font-size:14px; color:#999; margin:40px 0;}
+
+
+
+.form-control{width:100%;}
+
+#exampleInputEmail2{width:100%;}
+
+.sign{text-align:center !important; width:100% !important; max-width:161px; margin:40px auto !important;}
+
+
+
+.foot2 a{color:#666; font-family:"ubunturegular";}
+
+.foot2 a:hover{color:#000;}
+
+.foot{bottom:0; z-index:1;}
+
+.top2 .overlay {
+
+                background: none repeat scroll 0 0 rgba(36, 53, 69, 0.5);
+
+                left: 0;
+
+                position: absolute;
+
+                top: 30px;
+
+                width: 100%;
+
+                min-height: 420px;
+
+                z-index: 1;
+
+            }
+
+
+
+            .top2 .video {
+
+                /*height: 100%;*/
+
+                left: 0;
+
+                overflow: hidden;
+
+                position: absolute;
+
+                top: 50px;
+
+                width: 100%;
+
+                z-index: 0;
+
+                min-height: 420px;
+
+            }
+
+            .top2 .video img {
+
+                height: auto;
+
+                min-width: 100%;
+
+                position: relative;
+
+                width: auto;
+
+                z-index: 1;
+
+            }
+
+            .top2 .head{
+
+                z-index: 9;
+
+            }
+
+            #wpadminbar{
+
+                display: none;
+
+            }
+
+
+
+#diff{width:100%; color:#333; bottom:0px;}
+.page-template-home-tpl .foot ul li a{color:#fff;}
+
+.page-template-home-tpl .overlay {
+  background: none repeat scroll 0 0 rgba(36, 53, 69, 0.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*.page-template-home-tpl .overlay-gradient {
+  background: linear-gradient(to bottom, rgba(36, 53, 69, 1) 0%, rgba(36, 53, 69, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 500px;
+  width: 100%;
+}*/
+
+.page-template-home-tpl #video {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+body.page-template-home-tpl{
+    position:fixed;
+    width:100%;
+}
+
+.page-template-home-tpl .nav{
+    bottom: 0;
+    position: fixed;
+}
+.page-template-home-tpl .foot{
+    position:relative;
+}
+
+
+@media all and (min-width:150px) and (max-width:700px){
+    body.page-template-home-tpl{
+        position:relative;
+        width:100%;
+    }
+    .page-template-home-tpl .nav{
+        bottom: 0;
+        position: relative;
+    }
+    .menu.nav.navbar-nav {
+        font-size: 14px;
+        margin-top: 0px;
+        padding-top: 0;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        color: #777;
+    }
+    .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: transparent;
+        color: #777;
+        font-weight: bold;
+        margin: 0;
+    }
+    #fooetrHeader button{
+        display:none;
+    }
+    
+    #fooetrHeader {
+        height: 10px;
+    }
+    #navbar{
+          border-top: medium none;
+/*          position: relative;*/
+/*          margin-top: 50px;*/
+        }
+}
+
+@media all and (min-width:300px) and (max-width:350px){
+    .navbar-toggle{
+         margin-top: -45px;
+         padding: 10px 5px;
+         margin-bottom: 0px;
+         margin-right: 5px;
+    }
+    .page-template-home-tpl .navbar-toggle{
+        margin-top: 8px;
+        margin-right: 15px;
+    }
+    .btn-login{
+        left: -35px;
+        position: relative;
+    }
+}
+
+@media all and (min-width:401px){
+    .navbar-toggle{
+         margin-top: 8px;
+         padding: 10px 5px;
+         margin-right: 0;
+         margin-bottom: 0;
+    }
+    .page-template-home-tpl .navbar-toggle{
+        margin-right: 15px;
+    }
+}
+
+@media all and (min-width:701px){
+    #navbar{
+        display:none !important;
+    }
+}
