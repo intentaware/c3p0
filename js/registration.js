@@ -30,6 +30,7 @@ app.controller('AppCtrl', function($scope, $http) {
                     console.log($scope.userForm);
                 });
                 $scope.errors = response;
+                console.log($scope.errors);
             });
     }
 });
