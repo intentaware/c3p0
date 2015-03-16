@@ -143,6 +143,7 @@
                                     <md-input-container flex>
                                         <label>Email</label>
                                         <input ng-model="user.email" name="email" type="email" required>
+                                        <div ng-show="errors.email">{{ errors.email }}</div>
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Contact no</label>
