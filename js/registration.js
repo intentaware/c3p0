@@ -4,8 +4,26 @@ app.config( function($mdThemingProvider){
         $mdThemingProvider.theme('docs-dark', 'default')
     });
 
-app.controller('AppCtrl', function($scope) {
-    console.log('I am the king')
+app.controller('AppCtrl', function($scope, $http) {
+    var config = {
+        headers: {
+            "WP-API-KEY": "WP_nEhj6FkTJNiFfiS5moVeUE"
+        }
+    };
+
+    var url = 'http://app.adomattic.com/api/users/register/company/'
+    
+    $scope.submitForm = function () {
+        console.log($scope.user);
+        $http.post(
+            url, $scope.user, config
+            )
+            .success(function(response) {
+                console.log(response);
+            }).error(function(response) {
+                console.log(response);
+            });
+    }
 });
 
 app.directive("passwordVerify", function() {
