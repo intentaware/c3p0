@@ -105,7 +105,7 @@
 
         <div class="row">
             <div class="container">
-
+            <form name="registrationForm">
                 <div layout="column" flex id="content">
                     <md-content layout="column" flex class="md-padding">
                         <?php 
@@ -174,6 +174,7 @@
 
                     </md-content>
                 </div>
+            </form>
 
             </div>
         </div>
