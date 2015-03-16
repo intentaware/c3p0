@@ -125,18 +125,18 @@
                                 <div layout="row" layout-align="center center">
                                     <md-input-container flex="55">
                                         <label>Company Name</label>
-                                        <input ng-model="user.companyName" required name="companyName">
+                                        <input ng-model="user.name" required name="name">
                                     </md-input-container>
                                 </div>
 
                                 <div layout layout-sm="column">
                                     <md-input-container flex>
                                         <label>First Name</label>
-                                        <input ng-model="user.firstName" required name="firstName">
+                                        <input ng-model="user.first_name" required name="first_name">
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Last Name</label>
-                                        <input ng-model="theMax" name="lastName">
+                                        <input ng-model="user.last_name" name="last_name">
                                     </md-input-container>
                                 </div>
                                 <div layout layout-sm="column">
@@ -146,7 +146,7 @@
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Contact no</label>
-                                        <input ng-model="user.contactno" name="contactno" required>
+                                        <input ng-model="user.phone" name="phone" required>
                                     </md-input-container>
                                 </div>
 
@@ -154,13 +154,12 @@
                                     <md-input-container flex>
                                         <label>Password</label>
                                         <!--<input type="Password" name="password" id="password" ng-model="user.password" ng-required="true">-->
-                                        <input data-ng-model='user.password' type="password" name='password' required>
+                                        <input data-ng-model='user.password1' type="password" name='password1' required>
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Confirm Password</label>
                                         <!--<input type="Password" name="confirmPassword" ng-model="user.confirmPassword" ng-compare="password" ng-required="true">-->
-                                        <input ng-model='user.password_verify' type="password" name='confirm_password' required data-password-verify="user.password">
-                                        <div ng-show="form.confirm_password.$error.passwordVerify">Fields are not equal!</div>
+                                        <input ng-model='user.password2' type="password" name='password2' required data-password-verify="user.password">
                                     </md-input-container>
                                 </div>
 
