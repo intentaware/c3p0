@@ -159,7 +159,7 @@
                                     <md-input-container flex>
                                         <label>Confirm Password</label>
                                         <!--<input type="Password" name="confirmPassword" ng-model="user.confirmPassword" ng-compare="password" ng-required="true">-->
-                                        <input ng-model='user.password2' type="password" name='password2' required data-password-verify="user.password">
+                                        <input ng-model='user.password2' type="password" name='password2' required data-password-verify="user.password1">
                                     </md-input-container>
                                 </div>
 
