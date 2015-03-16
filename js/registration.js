@@ -5,6 +5,8 @@ app.config( function($mdThemingProvider){
     });
 
 app.controller('AppCtrl', function($scope, $http) {
+    $scope.submitted = false;
+
     var config = {
         headers: {
             "WP-API-KEY": "WP_nEhj6FkTJNiFfiS5moVeUE"
@@ -20,6 +22,7 @@ app.controller('AppCtrl', function($scope, $http) {
             )
             .success(function(response) {
                 console.log(response);
+                $scope.submitted = true;
             }).error(function(response) {
                 angular.forEach(response, function(value, key){
                     console.log(value);

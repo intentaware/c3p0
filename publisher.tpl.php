@@ -110,45 +110,41 @@
                 <div layout="column" flex id="content">
                     <md-content layout="column" flex class="md-padding">
 
-                    <?php 
-                            if($insert > 0)
-                            {
-                                echo '<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  Data submitted succesfully.
-</div>';
-                            }
-                        ?>
+                        <div class="alert alert-success alert-dismissible" role="alert" ng-show="submitted">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            Data submitted succesfully.
+                        </div>
                     
-                        <md-content class="md-padding">
-                            <form name="userForm" action="" method="post" ng-submit="submitForm()" novalidate>
+                        <md-content class="md-padding" ng-hide="submitted">
+                            <form name="userForm" ng-submit="submitForm()" novalidate>
                                 <input type="hidden" name="hdnSubmit" value="1">
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container flex="55">
                                         <label>Company Name</label>
-                                        <input ng-model="user.companyName" required name="companyName">
+                                        <input ng-model="user.name" required name="name">
                                     </md-input-container>
                                 </div>
 
                                 <div layout layout-sm="column">
                                     <md-input-container flex>
                                         <label>First Name</label>
-                                        <input ng-model="user.firstName" required name="firstName">
+                                        <input ng-model="user.first_name" required name="first_name">
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Last Name</label>
-                                        <input ng-model="theMax" name="lastName">
+                                        <input ng-model="user.last_name" name="last_name">
                                     </md-input-container>
                                 </div>
                                 <div layout layout-sm="column">
                                     <md-input-container flex>
                                         <label>Email</label>
                                         <input ng-model="user.email" name="email" type="email" required>
+                                        <div ng-show="errors.email">{{ errors.email }}</div>
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Contact no</label>
-                                        <input ng-model="user.contactno" name="contactno" required>
+                                        <input ng-model="user.phone" name="phone" required>
                                     </md-input-container>
                                 </div>
 
@@ -156,13 +152,12 @@
                                     <md-input-container flex>
                                         <label>Password</label>
                                         <!--<input type="Password" name="password" id="password" ng-model="user.password" ng-required="true">-->
-                                        <input data-ng-model='user.password' type="password" name='password' required>
+                                        <input data-ng-model='user.password1' type="password" name='password1' required>
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Confirm Password</label>
                                         <!--<input type="Password" name="confirmPassword" ng-model="user.confirmPassword" ng-compare="password" ng-required="true">-->
-                                        <input ng-model='user.password_verify' type="password" name='confirm_password' required data-password-verify="user.password">
-                                        <div ng-show="form.confirm_password.$error.passwordVerify">Fields are not equal!</div>
+                                        <input ng-model='user.password2' type="password" name='password2' required data-password-verify="user.password1">
                                     </md-input-container>
                                 </div>
 
@@ -190,51 +185,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-aria.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.js"></script>
-<script type="text/javascript">
-   var app = angular.module('StarterApp', ['ngMaterial']);
+<script src="<?php echo get_template_directory_uri(); ?>/js/registration.js" type="text/javascript"></script>
 
-    app.controller('AppCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
-        $scope.toggleSidenav = function(menuId) {
-            $mdSidenav(menuId).toggle();
-        },
-        $scope.user = {
-
-        };
-    }]).config( function($mdThemingProvider){
-        // Configure a dark theme with primary foreground yellow
-        $mdThemingProvider.theme('docs-dark', 'default')
-    });
-
-    app.directive("passwordVerify", function() {
-        return {
-            require: "ngModel",
-            scope: {
-                passwordVerify: '='
-            },
-            link: function(scope, element, attrs, AppCtrl) {
-                scope.$watch(function() {
-                    var combined;
-
-                    if (scope.passwordVerify || AppCtrl.$viewValue) {
-                        combined = scope.passwordVerify + '_' + AppCtrl.$viewValue; 
-                    }                    
-                    return combined;
-                }, function(value) {
-                    if (value) {
-                        AppCtrl.$parsers.unshift(function(viewValue) {
-                            var origin = scope.passwordVerify;
-                            if (origin !== viewValue) {
-                                AppCtrl.$setValidity("passwordVerify", false);
-                                return undefined;
-                            } else {
-                                AppCtrl.$setValidity("passwordVerify", true);
-                                return viewValue;
-                            }
-                        });
-                    }
-                });
-            }
-        };
-    });
-</script>
 <?php get_footer(); ?>

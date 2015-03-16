@@ -108,17 +108,14 @@
 
                 <div layout="column" flex id="content">
                     <md-content layout="column" flex class="md-padding">
-                        <?php 
-                            if($insert > 0)
-                            {
-                                echo '<div class="alert alert-success alert-dismissible" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                Data submitted succesfully.
-                                </div>';
-                            }
-                        ?>
 
-                        <md-content class="md-padding">
+                        <div class="alert alert-success alert-dismissible" role="alert" ng-show="submitted">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            Data submitted succesfully.
+                        </div>
+
+
+                        <md-content class="md-padding" ng-hide="submitted">
                             <form name="userForm" ng-submit="submitForm()" novalidate>
                                 <input type="hidden" name="hdnSubmit" value="1">
 
