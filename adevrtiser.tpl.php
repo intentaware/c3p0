@@ -119,7 +119,7 @@
                         ?>
 
                         <md-content class="md-padding">
-                            <form name="userForm" action="" method="post" ng-submit="submitForm()" novalidate>
+                            <form name="userForm" ng-submit="submitForm()" novalidate>
                                 <input type="hidden" name="hdnSubmit" value="1">
 
                                 <div layout="row" layout-align="center center">
