@@ -11,6 +11,8 @@ app.controller('AppCtrl', function($scope, $http) {
         }
     };
 
+    console.log($scope.userForm);
+
     var url = 'http://app.adomattic.com/api/users/register/company/'
     
     $scope.submitForm = function () {
@@ -21,7 +23,10 @@ app.controller('AppCtrl', function($scope, $http) {
             .success(function(response) {
                 console.log(response);
             }).error(function(response) {
-                console.log(response);
+                angular.forEach(response, function(value, key){
+                    console.log(value);
+                    console.log(key);
+                });
             });
     }
 });
