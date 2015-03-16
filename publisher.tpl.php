@@ -114,6 +114,13 @@
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             Data submitted succesfully.
                         </div>
+
+                        <div ng-repeat="(key, value) in errors">
+                            <div class="alert alert-danger alert-dismissible" role="alert" ng-show="submitted">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>{{ key }}: </strong> {{ value }}
+                            </div>
+                        </div>
                     
                         <md-content class="md-padding" ng-hide="submitted">
                             <form name="userForm" ng-submit="submitForm()" novalidate>
