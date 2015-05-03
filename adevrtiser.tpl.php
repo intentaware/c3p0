@@ -1,22 +1,22 @@
-<?php 
+<?php
     /**
     * Template Name: Advertiser Page
     */
 ?>
 <?php get_header(); ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/angular-material.min.css">
-<?php 
+<?php
     $insert = 0;
     if(isset($_POST['hdnSubmit']) && $_POST['hdnSubmit'])
     {
         $insertArray = array(
-        'company_name' => $_POST['companyName'], 
-        'first_name' => $_POST['firstName'], 
-        'last_name' => $_POST['lastName'], 
-        'email' => $_POST['email'], 
-        'password' => $_POST['password'], 
-        'contact_no' => $_POST['contactno'], 
-        'form_type' => 'advertise', 
+        'company_name' => $_POST['companyName'],
+        'first_name' => $_POST['firstName'],
+        'last_name' => $_POST['lastName'],
+        'email' => $_POST['email'],
+        'password' => $_POST['password'],
+        'contact_no' => $_POST['contactno'],
+        'form_type' => 'advertise',
         'created_date' => strtotime('now')
         );
 
@@ -36,7 +36,7 @@
                 <?php if(get_post_meta(get_the_ID(), 'wpcf-select-image', true) == 1){ ?>
                     <img src="<?php echo get_post_meta(get_the_ID(), 'wpcf-image', true); ?>" alt="">
                 <?php }else{ ?>
-                    
+
                 <?php } ?>
             </div>
 
@@ -123,6 +123,7 @@
                         <md-content class="md-padding" ng-hide="submitted">
                             <form name="userForm" ng-submit="submitForm()" novalidate>
                                 <input type="hidden" name="hdnSubmit" value="1">
+                                <input type="hidden" name="is_advertiser" ng-model="user.is_advertiser" value="true">
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container flex="55">
