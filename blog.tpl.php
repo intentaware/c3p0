@@ -89,10 +89,13 @@
                 <div class="row article-loop">
 
                     <?php 
+
+                        $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
                         $args = array (
                         'post_status'            => 'publish',
-                        'pagination'             => true,
-                        'posts_per_page'         => '6',
+                        'posts_per_page'         => 10,
+                        'paged'                  => $paged
                         );
 
                         // The Query
@@ -144,13 +147,6 @@
                             <?php
                             }
 
-                            // Previous/next page navigation.
-                            the_posts_pagination( array(
-                            'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-                            'next_text'          => __( 'Next page', 'twentyfifteen' ),
-                            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-                            ) );
-
                         } else {
 
                         ?>
@@ -162,11 +158,19 @@
                         <?php
                         }
 
-                        // Restore original Post Data
-                        wp_reset_postdata();
                     ?>
 
                 </div>
+                <?php if ($query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
+
+                    <?php adomattic_pagination($query->max_num_pages); // display older posts link ?>
+                    
+
+                    <?php } 
+
+                    // Restore original Post Data
+                    wp_reset_postdata();
+                ?>
             </div>
         </section>
 
