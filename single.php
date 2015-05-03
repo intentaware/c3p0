@@ -30,7 +30,7 @@
 
         <article>
             <header>
-                <div data-bottom-top="background-position:50% -100px;" data-top-bottom="background-position:50% -300px;" class="jumbotron header-page header-blog-post skrollable skrollable-between" style="background-position: 50% -300px; position: relative;">
+                <div data-bottom-top="background-position:50% -100px;" data-top-bottom="background-position:50% -100px;" class="jumbotron header-page header-blog-post skrollable skrollable-between" style="background-position: 50% -100px; position: relative;">
                     <div class="container">
                         <div class="row">
                             <!--<div class="col-md-8 col-md-offset-2">-->

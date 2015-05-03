@@ -152,7 +152,7 @@
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Contact no</label>
-                                        <input ng-model="user.phone" name="phone" required>
+                                        <input mask data-mask="999 - 999 - 9999" ng-model="user.phone" name="phone" type="text" required>
                                     </md-input-container>
                                 </div>
 
@@ -193,6 +193,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-aria.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.js"></script>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/angular-jquery-maskedinput.js"></script>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/registration.js" type="text/javascript"></script>
 
 <?php get_footer(); ?>

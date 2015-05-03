@@ -34,6 +34,7 @@
         overflow: hidden;
         padding: 0;
         width: 100%;
+        text-align: justify;
     }
     .blog-articles {
         padding-top: 0;
@@ -489,4 +490,31 @@
         border-left: 1px solid #dbdbdb;
         padding-left: 29px;
     }
+}
+
+.pagination {
+    text-align: center;
+    width: 100%;
+}   
+
+.pagination > span {
+    border: 1px solid #c0272c;
+    border-radius: 7px 7px 0;
+    color: #666;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.pagination .inactive,  .pagination a{
+    border: 1px solid #c0272c;
+    border-radius: 5px 5px 0;
+    color: #c0272c;
+    margin-right: 5px;
+    padding: 5px 10px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.pagination .current, .pagination .inactive:hover, .pagination a:hover {
+    background: none repeat scroll 0 0 #c0272c;
+    color: #fff;
 }
