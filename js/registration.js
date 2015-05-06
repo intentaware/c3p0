@@ -1,7 +1,7 @@
-var app = angular.module('StarterApp', ['ngMaterial', 'angular-jquery-maskedinput'])
+var app = angular.module('StarterApp', ['ngMaterial', 'angular-jquery-maskedinput']);
 app.config( function($mdThemingProvider){
     // Configure a dark theme with primary foreground yellow
-    $mdThemingProvider.theme('docs-dark', 'default')
+    $mdThemingProvider.theme('docs-dark', 'default');
 });
 
 app.controller('AppCtrl', function($scope, $http) {
@@ -13,7 +13,7 @@ app.controller('AppCtrl', function($scope, $http) {
         }
     };
 
-    var url = 'http://app.adomattic.com/api/users/register/company/'
+    var url = 'http://app.adomattic.com/api/users/register/company/';
 
     $scope.submitForm = function () {
         console.log($scope.user);
@@ -32,7 +32,7 @@ app.controller('AppCtrl', function($scope, $http) {
             $scope.errors = response;
             console.log($scope.errors);
         });
-    }
+    };
 });
 
 app.directive("passwordVerify", function() {
@@ -46,8 +46,8 @@ app.directive("passwordVerify", function() {
                 var combined;
 
                 if (scope.passwordVerify || AppCtrl.$viewValue) {
-                    combined = scope.passwordVerify + '_' + AppCtrl.$viewValue; 
-                }                    
+                    combined = scope.passwordVerify + '_' + AppCtrl.$viewValue;
+                }
                 return combined;
             }, function(value) {
                 if (value) {
