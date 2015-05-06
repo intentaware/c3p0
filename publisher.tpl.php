@@ -112,15 +112,15 @@
 
                         <div class="alert alert-success alert-dismissible" role="alert" ng-show="submitted">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            Data submitted succesfully.
+                            Thank you for registered as an Publisher with Adomattic.com
                         </div>
 
-                        <div ng-repeat="(k, v) in errors" ng-show="errors">
+                        <!--<div ng-repeat="(k, v) in errors" ng-show="errors">
                             <div class="alert alert-danger alert-dismissible" role="alert">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <strong>{{ k }}: </strong> {{ v }}
                             </div>
-                        </div>
+                        </div>-->
 
                         <md-content class="md-padding" ng-hide="submitted">
                             <form name="userForm" ng-submit="submitForm()" novalidate>
@@ -152,7 +152,7 @@
                                     </md-input-container>
                                     <md-input-container flex>
                                         <label>Contact no</label>
-                                        <input mask data-mask="999 - 999 - 9999" ng-model="user.phone" name="phone" type="text" required>
+                                        <input mask data-mask="999 - 999 - 9999" id="phone" ng-model="user.phone" name="phone" type="text" required>
                                     </md-input-container>
                                 </div>
 

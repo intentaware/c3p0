@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1>OUR BLOG</h1>
+                        <h1><?php the_title(); ?></h1>
                     </div>
                 </div>
             </div>
