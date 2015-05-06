@@ -123,7 +123,7 @@
                         <md-content class="md-padding" ng-hide="submitted">
                             <form name="userForm" ng-submit="submitForm()" novalidate>
                                 <input type="hidden" name="hdnSubmit" value="1">
-                                <input type="hidden" name="is_advertiser" ng-model="user.is_advertiser" value="true">
+                                <input type="text" name="is_advertiser" ng-model="user.is_advertiser" initial-value="true" style="display: none;">
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container flex="55">
