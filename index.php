@@ -1,33 +1,17 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-<div class="row">
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-    <div class="container">
-
-        <div class="col-lg-12 top">
-
-            <div class="col-lg-8 wel">
-
-                <h3>Welcome to Adomattic</h3>
-
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-            </div>
-
-            <div class="col-lg-4 dis">
-
-                <a href="#" class="btn btn-big btn-white" style="margin-bottom:20px; margin-top:40px !important;">Advertiser</a>
-
-                <div class="clearfix"></div>
-
-                <a href="#" class="btn btn-big btn-white">Publisher</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<?php get_footer(); ?>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
