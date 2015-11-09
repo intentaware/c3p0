@@ -1,6 +1,18 @@
-<?php get_header(); ?>
-
-
+<html>
+	<head>
+		<title>Sample Page</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default " style=" margin-top:-50px ; z-index:-1; background-color:white;" >
+        </nav>
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<li style="margin-top:-50px;  text-align:center; list-style: none;"><a href="#" id="spin"><img src="img/logo.png" id="logo"></a></li>
+			</div>
+		</div>
+        
             <div id="container">     
 				<div class="row" style="margin-top: 330px; margin-bottom: 20px">
 					<div class="col-lg-4" >
@@ -28,5 +40,22 @@
 					</div>
 				</div>
 			</div>
-
-<?php get_footer(); ?>
+			<div class= "nav navbar-default ">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav navbar-center" style=" margin-left:350px ;" >
+						<li><a href="#">Platforms</a></li>
+						<li><a href="#">Labs</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Opt-Out</a></li>
+						<li><a href="#">Brand Guidelines</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
