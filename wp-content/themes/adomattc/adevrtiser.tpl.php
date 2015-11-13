@@ -111,7 +111,7 @@
 
                         <div class="alert alert-success alert-dismissible" role="alert" ng-show="submitted">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            Thank you for registered as an Advertiser with Adomattic.com
+                            Thank you for registered as an Advertiser with Intentaware.com
                         </div>
                         <!--<div ng-repeat="(k, v) in errors" ng-show="errors">
                             <div class="alert alert-danger alert-dismissible" role="alert">
