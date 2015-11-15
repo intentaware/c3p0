@@ -44,35 +44,35 @@
 				<h3>Register</h3>
 				<form class="form-horizontal" id="singupForm">
 					<fieldset>
-						<div class="form-group">
+						<div class="form-group" id="emailBox">
 							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-								<input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" id="emailPlace">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="nameBox">
 							<label for="inputName" class="col-sm-2 control-label">Name</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="inputName" placeholder="Name" name="user_name">
+								<input type="text" class="form-control" id="inputName" placeholder="Name" name="user_name" id="namePlace">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="phoneBox">
 							<label for="inputPhone" class="col-sm-2 control-label">Phone</label>
 							<div class="col-sm-10">
-								<input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="phone">
+								<input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="phone" id="phonePlace">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="companyBox">
 							<label for="inputCompanyName" class="col-sm-2 control-label">Company Name</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="inputCompanyName" placeholder="Company Name" name="company_name">
+								<input type="text" class="form-control" id="inputCompanyName" placeholder="Company Name" name="company_name" id="companyPlace">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="roleBox">
 							<label for="inputPassword" class="col-sm-2 control-label">Role</label>
 							<div class="col-sm-10">
-								<select class="form-control" name="role">
-									<option selected disabled > Select One</Option>
+								<select class="form-control" name="role" id="rolePlace">
+									<option selected disabled value="0"> Select One</Option>
 										<option>Publisher</option>
 										<option>Advertiser</option>
 										<option>Small Business</option>
@@ -131,27 +131,35 @@
 				
 				$("#submit").click(function(e){
 					e.preventDefault();
-					var headers = {
+					
+					var emailValid = $("emailPlace").size ? $("#emailBox").addClass("has-error") : false; 
+					var nameValid = $("namePlace").size ? $("#nameBox").addClass("has-error"): false;
+					var companyValid = $("phonePlace").size ? $("#phoneBox").addClass("has-error"): false;
+					var phoneValid = $("companyPlace").size ? $("#companyBox").addClass("has-error"): false;
+					var roleValid = $("rolePlace").size ? $("#roleBox").addClass("has-error"): false;
+					
+					if (emailValid == false || nameValid == false || companyValid == false || phoneValid == false || roleValid == false)
+					{
+						var headers = {
 						"WP-API-KEY": "WP_nEhj6FkTJNiFfiS5moVeUE",
+						}
+										
+						$.ajax({
+							url: 'http://192.168.1.2:8000/api/users/register/lead/',
+							type: 'post',
+							data: $("#singupForm").serialize(),
+							headers: headers,
+							
+							success: function (data) {
+										console.log("Success");
+										console.log(data);
+									},
+							error: function(error) {
+									console.log("Error");
+									console.log(error);
+									}
+						});
 					}
-					
-					
-					
-					$.ajax({
-						url: 'http://192.168.1.2:8000/api/users/register/lead/',
-						type: 'post',
-						data: $("#singupForm").serialize(),
-						headers: headers,
-						
-						success: function (data) {
-									console.log("Success");
-									console.log(data);
-								},
-						error: function(error) {
-								console.log("Error");
-								console.log(error);
-								}
-					});
 				});
 			});
 		</script>
