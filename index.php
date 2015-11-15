@@ -42,24 +42,36 @@
 			<div id="form" class="col-lg-8 hidden" >
 			<div class="s-form" style="padding: 5 5 5">
 				<h3>Register</h3>
-				<form class="form-horizontal">
+				<form class="form-horizontal" id="singupForm">
 					<fieldset>
 						<div class="form-group">
 							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+							<label for="inputName" class="col-sm-2 control-label">Name</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+								<input type="text" class="form-control" id="inputName" placeholder="Name" name="user_name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPhone" class="col-sm-2 control-label">Phone</label>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="phone">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputCompanyName" class="col-sm-2 control-label">Company Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputCompanyName" placeholder="Company Name" name="company_name">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputPassword" class="col-sm-2 control-label">Role</label>
 							<div class="col-sm-10">
-								<select class="form-control">
+								<select class="form-control" name="role">
 									<option selected disabled > Select One</Option>
 										<option>Publisher</option>
 										<option>Advertiser</option>
@@ -67,13 +79,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" id="blankCheckbox" value="option1" aria-label="Accept Terms & Conditions">
-								Accept Terms & Conditions
-							</label>
-						</div>
-						<button type="submit" class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; width:115px">Submit</button>
+						<button type="submit" class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; width:115px" id="submit">Submit</button>
 						<button type="reset" class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; width:115px" id="abort">Cancel</button>
 					</fieldset>
 				</form>
@@ -100,7 +106,7 @@
 		<script src="wp-includes/js/bootstrap.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				var c2a = $("#c2a");
+				var c2a = $("#cta");
 				var form = $("#form");
 				var acS = "<div class='col-lg-4' style='margin-top: 45px' id='cta'><div class='row'><div class='col-lg-4'></div><div class='col-lg-4'><button class='btn btn-primary' style='background-color: #CD162D; border-color: #CD162D; width:115px' id='adv'> Advertiser </button><div class='row' style='padding:20px'></div><button class='btn btn-primary' style='background-color: #CD162D; border-color: #CD162D; width:115px'> Publisher </button></div><div class='col-lg-4'></div></div></div>";
 				
@@ -109,6 +115,7 @@
 					$("#context").fadeOut(400,function(){
 						$(this).replaceWith(function(){
 							form.removeClass("hidden");
+							c2a.addClass("hidden");
 							return $(form).hide().fadeIn(400);
 						});
 					});
@@ -119,6 +126,31 @@
 					$("#form").fadeOut(400,function(){
 						$("wSection").append(acS).hide().fadeIn(400);
 						
+					});
+				});
+				
+				$("#submit").click(function(e){
+					e.preventDefault();
+					var headers = {
+						"WP-API-KEY": "WP_nEhj6FkTJNiFfiS5moVeUE",
+					}
+					
+					
+					
+					$.ajax({
+						url: 'http://192.168.1.2:8000/api/users/register/lead/',
+						type: 'post',
+						data: $("#singupForm").serialize(),
+						headers: headers,
+						
+						success: function (data) {
+									console.log("Success");
+									console.log(data);
+								},
+						error: function(error) {
+								console.log("Error");
+								console.log(error);
+								}
 					});
 				});
 			});
