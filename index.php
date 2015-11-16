@@ -25,14 +25,13 @@
 							This makes our engine better than retargeting, contextual ads or any other ads.
 						</p>
 				</div>
-				<div class="col-lg-4 " style="margin-top: 45px" id="cta">
+				<div class="col-lg-4 " style="margin-top: 80px" id="cta">
 					<div class="row">
 						<div class="col-lg-4">
 						</div>
 						<div class="col-lg-4">
-							<button class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; width:115px" id="adv"> Advertiser </button>
-							<div class="row" style="padding:20px"></div>
-							<button class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; width:115px"> Publisher </button>
+							<button class="btn btn-primary" style="background-color: #CD162D; border-color: #CD162D; " id="adv"> Request a Demo </button>
+							
 						</div>
 						<div class="col-lg-4">
 						</div>
@@ -123,10 +122,7 @@
 				
 				$("#abort").click(function(e){
 					e.preventDefault();
-					$("#form").fadeOut(400,function(){
-						$("wSection").append(acS).hide().fadeIn(400);
-						
-					});
+					location.reload();
 				});
 				
 				$("#submit").click(function(e){
