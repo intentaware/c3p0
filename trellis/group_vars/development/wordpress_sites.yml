@@ -1,6 +1,6 @@
 # Documentation: https://roots.io/trellis/docs/local-development-setup/
 wordpress_sites:
-  example.com:
+  intentaware.dev:
     site_hosts:
       - intentaware.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
@@ -22,6 +22,6 @@ wordpress_sites:
       wp_home: http://intentaware.dev
       wp_siteurl: http://intentaware.dev/wp
       wp_env: development
-      db_name: example_dev
-      db_user: example_dbuser
-      db_password: example_dbpassword
+      db_name: intentaware
+      db_user: iaware
+      db_password: allsingingcrap
