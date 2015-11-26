@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+
+
+body, html {
+  font-family: $basic-font;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: $basic-font-color;
+
+  h1{
+  	text-transform: $heading-text-trasnform;
+  	h1 strong{
+		font-weight: 900;
+	   }
+  }
+
+  #tf-menu 
+  {
+    padding: 20px;
+    transition: all 0.8s;
+
+    #tf-menu.navbar-default 
+    {
+      background-color: #F8F8F8;
+      border-color: #E7E7E7;
+    }
+    a.navbar-brand 
+    {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: $basic-font-color;
+      font-weight: 900;
+    }
+
+    .on 
+    {
+      background-color: #222222 !important;
+      padding: 0 !important;
+    }
+
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus
+    {
+      color: #FCAC45 !important;
+      background-color: transparent;
+      font-weight: 700;
+    }
+
+    .navbar-toggle {
+      border-radius: 0;
+    }
+    .navbar-default .navbar-toggle:hover, 
+    .navbar-default .navbar-toggle:focus
+    {
+      background-color: #FCAC45;
+      border-color: #FCAC45;
+    }
+    .navbar-default .navbar-toggle:hover>.icon-bar
+    {
+      background-color: #FFF;
+    }
+  }
+
+    #tf-home
+    {
+      background: url(../../assets/images/01.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #cfcfcf;
+    } 
+}
