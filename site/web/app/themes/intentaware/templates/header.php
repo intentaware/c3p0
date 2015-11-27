@@ -1,5 +1,3 @@
-<div class="banner">
-  <div class="container">
       <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -23,6 +21,4 @@
         </div>
       </div>
     </nav>
-  </div>
-</div>
 <body>

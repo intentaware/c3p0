@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
+  
   <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
