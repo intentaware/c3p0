@@ -8,7 +8,7 @@
             <div class="content">
                 <h1>Welcome on <strong><span class="color"><?php the_title() ?></span></strong></h1>
                 <p class="lead"><?php the_content() ?></p>
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                <a><span id="#tf-about" class="glyphicon glyphicon-menu-down arrow-down" ></span></a>
             </div>
         </div>
     </div>
