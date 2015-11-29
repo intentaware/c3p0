@@ -1,4 +1,4 @@
 <!--Template Name: about -->
-<?php $page = (get_page_by_title("Sample Page")); 
+<?php $page = (get_page_by_title("About")); 
     echo $page->post_content;
 ?>
