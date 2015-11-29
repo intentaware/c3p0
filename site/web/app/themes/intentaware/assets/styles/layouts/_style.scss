@@ -21,8 +21,8 @@ body, html {
     transition: all 0.8s;
   }
   #tf-menu.navbar-default {
-  background-color: #171717;
-  border-color: #171717;
+  background-color: #232323;
+  border-color: #212121;
   }
   #tf-menu a.navbar-brand
   {
@@ -88,6 +88,7 @@ body, html {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
         height: 750px;
         background-attachment: fixed;
+        margin-top: -90px;
       }
       .content
       {
