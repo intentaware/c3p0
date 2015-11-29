@@ -1,6 +1,6 @@
- /*
- Template Name: Front Page
- */
+
+ <!--Template Name: Front Page -->
+
 <?php while (have_posts()) : the_post(); ?>
   
   <div id="tf-home" class="text-center">
@@ -13,7 +13,4 @@
         </div>
     </div>
 <?php endwhile; ?>
-<pre>
-<?php $page = (get_page_by_title("Sample Page")); 
-    echo $page->post_content;
-?>
+<?php get_template_part('templates/about'); ?>
