@@ -14,3 +14,5 @@
     </div>
 <?php endwhile; ?>
 <?php get_template_part('templates/about'); ?>
+<?php get_template_part('templates/plateforms'); ?>
+<?php get_template_part('templates/labs'); ?>
