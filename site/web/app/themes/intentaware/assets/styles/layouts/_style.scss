@@ -255,6 +255,15 @@ nav#footer.push{
   outline: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
+
+}
+ul{ margin: 30px 0 0 ;}
+li{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+li span{ 
+  margin-right: 10px;
 }
 button.btn.tf-btn.btn-default {
   float: right;
