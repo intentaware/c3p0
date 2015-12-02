@@ -1,4 +1,4 @@
- <!--Template Name: plateforms -->
+<!--Template Name: plateforms -->
 <?php $page = (get_page_by_title("Our Platforms"));
         $packet = get_the_post_thumbnail($page->ID);
         $src = preg_match_all('@[(a-zA-z//:0-9/.)]+@i', $packet, $matches);
