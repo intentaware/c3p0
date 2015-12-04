@@ -1,9 +1,10 @@
 # Documentation: https://roots.io/trellis/docs/local-development-setup/
 wordpress_sites:
-  intentaware:
+  intentaware.dev:
+    site_name: 'intentaware.dev'
     site_hosts:
-      - intentaware.dev
-    local_path: "../site" # path targeting local Bedrock site directory (relative to Ansible root)
+      - 'intentaware.dev'
+    local_path: '../site' # path targeting local Bedrock site directory (relative to Ansible root)
     site_install: true
     site_title: Intentaware
     admin_user: hansolo
