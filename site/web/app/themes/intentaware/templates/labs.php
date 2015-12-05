@@ -1,5 +1,5 @@
 <!--Template Name: labs -->
-<?php $page = (get_page_by_title("Labs")); ?>
+<?php $page = (get_page_by_title("CAREER INFORMATION")); ?>
 <div id="tf-clients" class="text-center">
         <div class="overlay">
             <div class="container">

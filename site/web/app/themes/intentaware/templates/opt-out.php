@@ -7,7 +7,7 @@
     {
         $image = ($matches[0][6]);
         ?>
-        <div id="tf-services" class="text-center imaged" style="background-image: url('<?php echo $image; ?>')">
+        <div id="opt-out" class="text-center imaged" style="background-image: url('<?php echo $image; ?>')">
             <div class="overlay">
                 <div class="container">
                     <div class="section-title center">
@@ -29,7 +29,7 @@
     else
     {
         ?>
-        <div id="tf-services" class="text-center">
+        <div id="opt-out" class="text-center">
         <div class="container">
             <div class="section-title center">
                 <h2>Take a look at <strong><?php echo $page->post_title; ?></strong></h2>
