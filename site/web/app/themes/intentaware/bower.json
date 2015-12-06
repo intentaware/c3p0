@@ -7,7 +7,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.5"
+    "bootstrap-sass": "3.3.5",
+    "modernizr": "~3.2.0",
+    "smoothscroll": "~0.1.0",
+    "jquery": "~2.1.4",
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3"
   },
   "overrides": {
     "bootstrap-sass": {

@@ -2,7 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/look_at_manifest.js"
       ],
       "main": true
     },
@@ -20,6 +21,9 @@
     "jquery.js": {
       "bower": ["jquery"]
     },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    }
   },
   "config": {
     "devUrl": "http://intentaware.dev"

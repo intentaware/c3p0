@@ -1,97 +1,89 @@
-/* ========================================================================
- * DOM-based Routing
- * Based on http://goo.gl/EUTi53 by Paul Irish
- *
- * Only fires on body classes that match. If a body class contains a dash,
- * replace the dash with an underscore when adding it to the object below.
- *
- * .noConflict()
- * The routing is enclosed within an anonymous function so that you can
- * always reference jQuery with $, even when in .noConflict() mode.
- * ======================================================================== */
+// Put your custom javascript function inside
+// JQuery(document).ready($) {}
+// function
 
-(function($) {
+jQuery(document).ready(function($) {
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  (function () {
-   'use strict';
+  (function() {
+    'use strict';
 
-   /* ==============================================
-    Testimonial Slider
-    =============================================== */ 
+    /* ==============================================
+     Testimonial Slider
+     =============================================== */
 
     $('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 40
+          }, 900);
+          return false;
         }
-      });
+      }
+    });
     /*====================================
     Show Menu on Book
     ======================================*/
     $(window).bind('scroll', function() {
-        var navHeight = $(window).height() - 100;
-        if ($(window).scrollTop() > navHeight) {
-            $('.navbar-default').addClass('on');
-        } else {
-            $('.navbar-default').removeClass('on');
-        }
+      var navHeight = $(window).height() - 100;
+      if ($(window).scrollTop() > navHeight) {
+        $('.navbar-default').addClass('on');
+      } else {
+        $('.navbar-default').removeClass('on');
+      }
     });
 
-    $('body').scrollspy({ 
-        target: '.navbar-default',
-        offset: 80
+    $('body').scrollspy({
+      target: '.navbar-default',
+      offset: 80
     })
 
     $(document).ready(function() {
       $("#team").owlCarousel({
-     
-          navigation : false, // Show next and prev buttons
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          autoHeight : true,
-          itemsCustom : [
-                [0, 1],
-                [450, 2],
-                [600, 2],
-                [700, 2],
-                [1000, 4],
-                [1200, 4],
-                [1400, 4],
-                [1600, 4]
-              ],
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        autoHeight: true,
+        itemsCustom: [
+          [0, 1],
+          [450, 2],
+          [600, 2],
+          [700, 2],
+          [1000, 4],
+          [1200, 4],
+          [1400, 4],
+          [1600, 4]
+        ],
       });
 
       $("#clients").owlCarousel({
-     
-          navigation : false, // Show next and prev buttons
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          autoHeight : true,
-          itemsCustom : [
-                [0, 1],
-                [450, 2],
-                [600, 2],
-                [700, 2],
-                [1000, 4],
-                [1200, 5],
-                [1400, 5],
-                [1600, 5]
-              ],
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        autoHeight: true,
+        itemsCustom: [
+          [0, 1],
+          [450, 2],
+          [600, 2],
+          [700, 2],
+          [1000, 4],
+          [1200, 5],
+          [1400, 5],
+          [1600, 5]
+        ],
       });
 
       $("#testimonial").owlCarousel({
-        navigation : false, // Show next and prev buttons
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true
-        });
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true
+      });
 
     });
 
@@ -99,35 +91,35 @@
     Portfolio Isotope Filter
     ======================================*/
     $(window).load(function() {
-        var $container = $('#lightbox');
+      var $container = $('#lightbox');
+      $container.isotope({
+        filter: '*',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        }
+      });
+      $('.cat a').click(function() {
+        $('.cat .active').removeClass('active');
+        $(this).addClass('active');
+        var selector = $(this).attr('data-filter');
         $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
+          filter: selector,
+          animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+          }
         });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
+        return false;
+      });
 
     });
 
 
 
-}());
+  }());
 
   var Sage = {
     // All pages
@@ -189,4 +181,4 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-})(jQuery); // Fully reference jQuery after this point.
+});
