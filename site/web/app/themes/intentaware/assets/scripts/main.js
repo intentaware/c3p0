@@ -13,7 +13,8 @@ jQuery(document).ready(function($) {
      =============================================== */
 
     $('a.page-scroll').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      console.log("Link clicked");
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
@@ -39,7 +40,7 @@ jQuery(document).ready(function($) {
     $('body').scrollspy({
       target: '.navbar-default',
       offset: 80
-    })
+    });
 
     $(document).ready(function() {
       $("#team").owlCarousel({
