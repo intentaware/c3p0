@@ -3,7 +3,7 @@
     "main.js": {
       "files": [
         "scripts/main.js",
-        "scripts/look_at_manifest.js"
+        "scripts/custom_built.js"
       ],
       "main": true
     },
