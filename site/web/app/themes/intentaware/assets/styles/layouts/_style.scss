@@ -7,6 +7,7 @@ body, html {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: $basic-font-color;
+  link: #000;
 
   h1
   {
@@ -22,6 +23,11 @@ body, html {
   h4
   {
     text-transform: $heading-text-trasnform;
+  }
+  a 
+  {
+    color: #5A5A5A;
+    text-decoration: none;
   }
 
   p.intro
