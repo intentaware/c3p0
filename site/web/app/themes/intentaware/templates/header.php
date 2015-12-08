@@ -1,3 +1,5 @@
+<?php if (!is_page('blog')) {
+  ?>
       <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -22,3 +24,6 @@
       </div>
     </nav>
 <body>
+<?php 
+} 
+?>
