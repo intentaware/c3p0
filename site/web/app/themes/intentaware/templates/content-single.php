@@ -6,7 +6,8 @@
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
-      
+      is this single post page ?
+
     </div>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
