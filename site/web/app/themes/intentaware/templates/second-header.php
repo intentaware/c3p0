@@ -1,4 +1,4 @@
-<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top when-top" style="background-color: #232323 !important">
       <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
