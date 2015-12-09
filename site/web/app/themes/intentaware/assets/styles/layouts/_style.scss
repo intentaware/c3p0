@@ -58,11 +58,14 @@ body, html {
 
 .when-top {
   background: transparent !important;
+  color: #fff !important;
 }
 
 .when-scrolled {
-  background: #232323;
+  background: #EEEEEE;
   padding: 0 !important;
+  color: #333;
+  
 }
 
 #tf-menu a.navbar-brand {
@@ -74,7 +77,6 @@ body, html {
 
 #tf-menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #FFF;
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -102,7 +104,7 @@ body, html {
 
 #tf-home
 {
-  background: url(../../assets/images/01.jpg);
+  background: url(../../assets/images/background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -342,4 +344,8 @@ button.btn.tf-btn.btn-default {
 {
   height: 85px;
   margin-top: -30px;
+}
+.textNav
+{
+  color: #333 !important;
 }
