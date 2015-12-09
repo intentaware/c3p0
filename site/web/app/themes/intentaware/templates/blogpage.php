@@ -19,7 +19,7 @@
 
                 		<section class="article" id="<?php echo $post['ID'] ?>">
                 			<div class="postBox">
-	                		<h4><a href="/?p=<?php echo $post['ID'] ?>" class="alink"><?php echo $post['post_title']?></a></h4>
+	                		<h4><a href="/?p=<?php echo $post['ID'] ?>"><?php echo $post['post_title']?></a></h4>
 	                		<div class="line">
                     			<hr>
                 			</div>
