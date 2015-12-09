@@ -3,8 +3,8 @@
  * Template Name: Blogpage
  */
 ?>
-<div class="container">
-<button class="btn tf-btn btn-default"><a href="<?php echo(home_url()) ?>"><span class="glyphicon glyphicon-menu-left"></span> Home </a></button>
+<?php get_template_part('templates/second-header'); ?>
+<div class="container blogContainer">
 <div class="text">
 <div class="section-title" style="min-height: 650px" >
                 <h2><strong>Blog</strong></h2>
@@ -19,7 +19,7 @@
 
                 		<section class="article" id="<?php echo $post['ID'] ?>">
                 			<div class="postBox">
-	                		<h4><a href="/?p=<?php echo $post['ID'] ?>" class="alink"><?php echo $post['post_title']?></a></h4>
+	                		<h4><a href="/?p=<?php echo $post['ID'] ?>"><?php echo $post['post_title']?></a></h4>
 	                		<div class="line">
                     			<hr>
                 			</div>

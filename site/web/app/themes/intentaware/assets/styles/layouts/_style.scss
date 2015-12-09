@@ -7,7 +7,7 @@ body, html {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: $basic-font-color;
-  link: #000;
+
 
   h1
   {
@@ -52,7 +52,7 @@ body, html {
 
   #tf-menu 
   {
-    padding: 20px;
+    padding: 5px;
     transition: all 0.8s;
   }
   #tf-menu.navbar-default {
@@ -324,4 +324,14 @@ button.btn.tf-btn.btn-default {
   padding-left: 35px;
   padding-bottom: 40px;
   padding-top: 1px;
+  
+}
+
+.blogContainer {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.commentControl {
+  width: 75%;
+  margin-top: 45px;
 }

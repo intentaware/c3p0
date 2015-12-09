@@ -1,6 +1,4 @@
-<?php if (is_front_page()) {
-  ?>
-      <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -15,7 +13,7 @@
           <ul class="nav navbar-nav navbar-right">
             <?php
             if (has_nav_menu('primary_navigation')) : ?>
-             <li><?php wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav navbar-right']); ?></li>
+             <li><?php wp_nav_menu(['menu' => 'Menu2', 'theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav navbar-right']); ?></li>
              <?php
             endif;
             ?>
@@ -24,6 +22,3 @@
       </div>
     </nav>
 <body>
-<?php 
-} 
-?>
