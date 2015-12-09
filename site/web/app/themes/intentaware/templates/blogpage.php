@@ -3,8 +3,8 @@
  * Template Name: Blogpage
  */
 ?>
-<div class="container">
-<button class="btn tf-btn btn-default"><a href="<?php echo(home_url()) ?>"><span class="glyphicon glyphicon-menu-left"></span> Home </a></button>
+<?php get_template_part('templates/second-header'); ?>
+<div class="container blogContainer">
 <div class="text">
 <div class="section-title" style="min-height: 650px" >
                 <h2><strong>Blog</strong></h2>
