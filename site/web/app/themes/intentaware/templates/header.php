@@ -1,4 +1,4 @@
-<?php if (!is_page('blog')) {
+<?php if (is_front_page()) {
   ?>
       <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
