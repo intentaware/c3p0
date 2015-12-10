@@ -58,11 +58,14 @@ body, html {
 
 .when-top {
   background: transparent !important;
+  color: #fff !important;
 }
 
 .when-scrolled {
-  background: #232323;
+  background: #EEEEEE;
   padding: 0 !important;
+  color: #333;
+  
 }
 
 #tf-menu a.navbar-brand {
@@ -74,7 +77,6 @@ body, html {
 
 #tf-menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #FFF;
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -83,7 +85,7 @@ body, html {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #FCAC45 !important;
+  color: $basic-color !important;
   background-color: transparent;
   font-weight: 700;
 }
@@ -93,8 +95,8 @@ body, html {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #FCAC45;
-  border-color: #FCAC45;
+  background-color: $basic-color;
+  border-color: $basic-color;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
   background-color: #FFF;
@@ -102,7 +104,7 @@ body, html {
 
 #tf-home
 {
-  background: url(../../assets/images/01.jpg);
+  background: url(../../assets/images/background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -113,7 +115,7 @@ body, html {
   margin-top: 70px;
   .color
   {
-    color: #fcac45;
+    color: $basic-color;
   }
   .overlay
   {
@@ -154,7 +156,7 @@ body, html {
       font-weight: 300;
     }
     .section-title.center .line{
-      border-top: 4px solid #fcac45;
+      border-top: 4px solid $basic-color;
       height: 10px;
       width: 60px;
       text-align: center;
@@ -173,7 +175,7 @@ body, html {
 
     .section-title hr
     {
-      border-color: #fcac45;
+      border-color: $basic-color;
       border-width: 4px;
       width: 60px;
       float: left;
@@ -227,10 +229,10 @@ body, html {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
   opacity: 1;
-  background: #FCAC45;
+  background: $basic-color;
 }
 .owl-theme .owl-controls .owl-page.active span{
-  background: #FCAC45;
+  background: $basic-color;
 }
 
 }
@@ -289,7 +291,7 @@ li span{
 }
 button.btn.tf-btn.btn-default {
   float: right;
-  background: #FCAC45;
+  background: $basic-color;
   border: 0;
   border-radius: 0;
   padding: 10px 40px;
@@ -337,4 +339,13 @@ button.btn.tf-btn.btn-default {
 .commentControl {
   width: 75%;
   margin-top: 45px;
+}
+.logo
+{
+  height: 85px;
+  margin-top: -30px;
+}
+.textNav
+{
+  color: #333 !important;
 }
