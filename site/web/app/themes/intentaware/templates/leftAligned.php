@@ -14,7 +14,7 @@
         $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
         $content = str_replace(']]>', ']]>', $content);
         ?>
-            <div id="" class="leftAligned">
+            <div id="<?php echo $page->post_title; ?>" class="leftAligned">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -41,7 +41,7 @@
     else
     {
         ?>
-            <div id="" class="text-center leftAligned">
+            <div id="<?php echo $page->post_title; ?>" class="text-center leftAligned">
         <div class="container">
             <div class="section-title center">
                 <h4><?php echo $page->post_title ?></h4>
