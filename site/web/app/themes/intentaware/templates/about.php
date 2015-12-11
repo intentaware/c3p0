@@ -1,5 +1,5 @@
 <!--Template Name: about -->
-<?php $page = (get_page_by_title("About")); ?>
+
 <div id="tf-about">
         <div class="container">
             <div class="row">
