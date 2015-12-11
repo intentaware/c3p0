@@ -1,4 +1,4 @@
-<!--Template Name: plateforms -->
+<!--Template Name: BrandGuidelines -->
 <?php $page = (get_page_by_title("Brand Guidelines")); ?>
 <div id="brand-guideline" class="text-center">
 	<div class="container">
