@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="<?php echo $media['0'] ?>" class="img-responsive">
+                            <img src="<?php echo $media['0'] ?>" class="img-responsive imgFrame">
                         </div>
                     </div>  
                 </div>
