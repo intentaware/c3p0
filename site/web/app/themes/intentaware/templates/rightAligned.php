@@ -14,14 +14,21 @@
         $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
         $content = str_replace(']]>', ']]>', $content);
         ?>
-            <div id="<?php echo $page->post_title; ?>" class="leftAligned">
+            <div id="<?php echo (str_replace(" ", "-", strtolower($page->post_title))); ?>" class="leftAligned">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="about-text">
                                 <div class="section-title">
                                     <h4><?php echo $page->post_title ?></h4>
-                                    <h2><?php echo $custom['shortline'][0]?></h2>
+                                    <?php 
+                                        if(array_key_exists("shortline", $custom))
+                                        {
+                                            ?>
+                                                <h2><?php echo $custom['shortline'][0]?></h2>
+                                            <?php
+                                        }
+                                    ?>
                                     <div class="line">
                                         <hr>
                                     </div>
@@ -41,11 +48,18 @@
     else
     {
         ?>
-            <div id="<?php echo $page->post_title; ?>" class="text-center leftAligned">
+            <div id="<?php echo (str_replace(" ", "-", strtolower($page->post_title))); ?>" class="text-center leftAligned">
         <div class="container">
             <div class="section-title center">
                 <h4><?php echo $page->post_title ?></h4>
-                <h2><?php echo $custom['shortline'][0]?></h2>
+                <?php 
+                    if(array_key_exists("shortline", $custom))
+                    {
+                        ?>
+                            <h2><?php echo $custom['shortline'][0]?></h2>
+                        <?php
+                    }
+                ?>
                 <div class="line">
                     <hr>
                 </div>
