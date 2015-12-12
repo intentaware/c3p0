@@ -1,4 +1,4 @@
-<!--Template Name: contatc -->
+<!--Template Name: contact -->
 <?php $page = (get_page_by_title("Contact Us"));
         $packet = get_the_post_thumbnail($page->ID);
         $src = preg_match_all('@[(a-zA-z//:0-9/.)]+@i', $packet, $matches);

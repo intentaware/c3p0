@@ -9,6 +9,4 @@
             </div>
         </div>
     </div>
-  
-  is it now ?
 <?php endwhile; ?>
