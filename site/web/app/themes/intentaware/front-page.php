@@ -11,7 +11,7 @@ if(has_post_thumbnail(get_the_ID()))
 	$children = get_page_children( get_the_ID(), $all_wp_pages );
 	?>
 	<div id="home" class="text-center" style="background-image: url(<?php echo $thumbUrl; ?>)">
-    	<div class="overlay">
+    	<div class="overlay coverUp">
         	<div class="content">
             	<h1>Welcome on <strong><span class="color"><?php the_title() ?></span></strong></h1>
             	<p class="lead"><?php the_content() ?></p>
