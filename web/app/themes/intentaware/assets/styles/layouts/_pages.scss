@@ -1,0 +1,118 @@
+#home
+{
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	color: #cfcfcf;
+  	margin-left: -15px;
+  	margin-right: -15px;
+  	margin-top: 70px;
+
+  	.color
+  	{
+  	  color: $basic-color;
+  	}
+  	
+    .content
+    {
+    	position: relative;
+  	    padding: 20% 0 0;
+  	    padding-top: 20em;
+  	}
+  	.arrow-down
+  	{
+	    padding: 80px 0;
+	    margin-top: 200px;
+	    color: #fff;
+  	}
+
+  	.overlay.coverUp
+  	{
+  		height: 750px;
+  		margin-top: -90px;
+  	}
+}
+
+.leftAligned
+{
+	padding: 50px 0 20px;
+
+}
+
+.overlay
+{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	background-attachment: fixed;
+}
+
+.fullBG
+{
+	padding: 50px 0 50px;
+	min-height: 30em;
+}
+
+.textContent
+  {
+    font-size: 16px;
+    margin: 12px 0 0;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .section-title.center
+  {
+    padding: 30px 0;
+  }
+
+  .section-title h2,
+  .section-title.center h2
+  {
+  	font-weight: 300;
+  }
+
+  .section-title.center .line
+  {
+  	border-top: 4px solid $basic-color;
+  	height: 10px;
+  	width: 60px;
+  	text-align: center;
+  	margin: 0 auto;
+  	margin-top: 20px;
+  }
+
+  .section-title.center hr 
+  {
+  	border-top: 4px solid rgba(252, 172, 69, 0.34);
+  	width: 40px;
+  	text-align: center;
+  	margin-top: 10px;
+  	position: relative;
+  	left: 17%;
+  }
+
+  .section-title hr
+  {
+  	border-color: $basic-color;
+  	border-width: 4px;
+  	width: 60px;
+  	float: left;
+  	clear: both;
+  }
+
+  .imaged
+{
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin-left: -15px;
+  margin-right: -15px;
+}

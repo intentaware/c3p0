@@ -1,4 +1,5 @@
-<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+<!--Template Name: second-header -->
+<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top when-top" style="background-color: #232323 !important">
       <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -7,7 +8,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+            <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo-full.png" class="logo"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
