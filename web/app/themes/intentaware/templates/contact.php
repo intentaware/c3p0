@@ -28,24 +28,24 @@
                     <form>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <label class="mdl-textfield__label" for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="mdl-textfield__input" id="exampleInputEmail1">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <label class="mdl-textfield__label" for="exampleInputPassword1">Password...</label>
+                                    <input type="password" class="mdl-textfield__input" id="exampleInputPassword1">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <label class="mdl-textfield__label" for="exampleInputEmail1">Message</label>
+                            <textarea class="mdl-textfield__input" rows="3"></textarea>
                         </div>
                         
-                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
                     </form>
 
                 </div>

@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="<?php echo $media['0'] ?>" class="img-responsive">
+                            <img src="<?php echo $media['0'] ?>" class="img-responsive imgFrame">
                         </div>
                         <div class="col-md-6">
                             <div class="about-text">
