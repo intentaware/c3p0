@@ -13,7 +13,8 @@
     "jquery": "~2.1.4",
     "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
     "isotope": "~2.2.2",
-    "owl-carousel": "~1.3.2"
+    "owl-carousel": "~1.3.2",
+    "material-design-lite": "~1.0.6"
   },
   "overrides": {
     "outlayer": {
