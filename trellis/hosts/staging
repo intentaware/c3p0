@@ -1,5 +1,5 @@
 [web]
-192.168.50.5
+52.32.191.6     ansible_ssh_port=22
 
 [staging:children]
 web
