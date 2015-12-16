@@ -31,7 +31,7 @@ body, html
 
   a
   {
-    color: #5A5A5A;
+    color: $basic-color;
     text-decoration: none;
   }
 
@@ -178,5 +178,22 @@ button.btn.tf-btn.btn-default
 .demo-card-square > .mdl-card__title {
   color: #fff;
   background:
-    url('../assets/demos/dog.png') bottom right 15% no-repeat $basic-color;
+   bottom right 15% no-repeat $basic-color;
+}
+.backed 
+{
+  color: #fff;
+  
+}
+.demo-card-square .backed .overlay>  .mdl-card__title
+{
+   color: #fff ;
+   font-weight: 700 !important;
+   
+   padding-top: 95px;
+}
+.mdl-mini-footer
+{
+  padding: 10px 7px 1px;
+  background-color: #EEEEEE;
 }
