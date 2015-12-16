@@ -25,8 +25,7 @@
     },
     "isotope": {
       "main": [
-        "./dist/isotope.pckgd.js",
-        "./dist/isotope.pckgd.min.js"
+        "./dist/isotope.pckgd.js"
       ]
     },
     "bootstrap-sass": {

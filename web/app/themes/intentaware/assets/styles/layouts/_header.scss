@@ -6,7 +6,7 @@
 
 .when-top {
   background: transparent !important;
-  color: #fff !important;
+  
 }
 
 .when-scrolled {
@@ -23,10 +23,16 @@
   font-weight: 900;
 }
 
-#tf-menu.navbar-default .navbar-nav > li > a {
+#tf-menu.navbar-default.when-top .navbar-nav > li > a {
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  color: #fff;
+}
+
+#tf-menu.navbar-default.when-scrolled .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #333;
 }
 
 

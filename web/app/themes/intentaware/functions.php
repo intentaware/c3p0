@@ -28,3 +28,8 @@ foreach ($sage_includes as $file) {
 unset($file, $filepath);
 add_theme_support( 'post-thumbnails' );
 
+// CVPro - Fix Session error
+add_filter( 'pt_cv_start_session', '__return_false' );
+
+
+
