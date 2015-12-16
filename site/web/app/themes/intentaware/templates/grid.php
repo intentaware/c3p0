@@ -24,7 +24,14 @@ foreach ($cats as $key => $value)
 			$content = strip_tags($value['post_content']);
 			$value['post_content'] = $content;
 			$pos = strpos($content, ' ', 50);
-			$value['min_desc'] = substr($content, 0, $pos); 
+			$value['min_desc'] = substr($content, 0, $pos);
+			$postId = $value['ID'];
+			$attachments = get_attached_media('image',$postId);
+			foreach ($attachments as $att) {
+				$images = $att->guid;
+			}
+			if(isset($images)) $value['media'] = $images;
+
 			$loop[] = $value;
 		}
 	}
@@ -51,20 +58,53 @@ foreach ($cats as $key => $value)
 			{
 				?>
 					<div class="mdl-cell mdl-cell--4-col">
-						<div class="demo-card-square mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title mdl-card--expand">
-								<h2 class="mdl-card__title-text"><?php echo $value['post_title'] ?></h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								<?php echo $value['min_desc']."..." ?>
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-    							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-    							Read More...
-    							</a>
+					<?php 
+						if(array_key_exists('media',$value))
+						{
+							?>
+							<div class='demo-card-square mdl-card mdl-shadow--2dp' >
+								<div class="backed" style="background: url('<?php echo $value['media'] ?>') ">
+								<div class="overlay">
+									<div class="mdl-card__title mdl-card--expand">
+										<h2 class="mdl-card__title-text"><?php echo $value['post_title'] ?></h2>
+									</div>
+									</div>
+									</div>
+									<div class="mdl-card__supporting-text">
+										<?php echo $value['min_desc']."..." ?>
+									</div>
+									<div class="mdl-card__actions mdl-card--border">
+    									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    										Read More...
+    									</a>
+    								</div>
+    								
     						</div>
-    					</div>	
-    				</div>
+
+							<?php
+						}
+						else
+						{
+							?>
+							<div class='demo-card-square mdl-card mdl-shadow--2dp'>
+								<div class="mdl-card__title mdl-card--expand">
+									<h2 class="mdl-card__title-text"><?php echo $value['post_title'] ?></h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<?php echo $value['min_desc']."..." ?>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+    								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    									Read More...
+    								</a>
+    							</div>
+							</div>	
+    				
+							<?php
+						}
+					?>
+						
+					</div>		
 				<?php
 			}
 				?>
