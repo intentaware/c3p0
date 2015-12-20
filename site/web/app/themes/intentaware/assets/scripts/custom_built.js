@@ -11,4 +11,9 @@ jQuery(document).ready(function($){
       }
     }
   });
+  $(".page-scroll").mouseover(function() {
+    $(this).find("ul").css("display","block");
+  }).mouseout(function() {
+    $(this).find("ul").css("display","none");
+  });
 });

@@ -55,3 +55,42 @@
 .navbar-default .navbar-toggle:hover>.icon-bar {
   background-color: #FFF;
 }
+
+#tf-menu.navbar-default.when-top .navbar-nav .sub-menu{
+position:relative;
+left: 0;
+display:none;
+margin-top: -10px;
+/*margin-left: -35px; */
+text-transform: uppercase;
+font-size: 15px;
+min-width: 100%;
+overflow: hidden;
+list-style:none;
+
+}
+
+#tf-menu.navbar-default.when-scrolled .navbar-nav .sub-menu{
+display:none;
+margin-top: -10px;
+margin-left: -35px;
+
+}
+/*
+#tf-menu.navbar-default.when-top .navbar-nav li:hover ul {
+display:inline-block;
+}
+
+#tf-menu.navbar-default.when-scrolled .navbar-nav li:hover ul {
+display:block;
+}
+*/
+#tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a 
+{
+  color: #fff;
+}
+
+#tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a:hover
+{
+  color: $basic-color;
+}
