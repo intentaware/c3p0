@@ -2,6 +2,7 @@
   padding: 5px;
   transition: all 0.8s;
   border-color: transparent !important;
+  width: auto;
 }
 
 .when-top {
@@ -57,16 +58,34 @@
 }
 
 #tf-menu.navbar-default.when-top .navbar-nav .sub-menu{
-position:relative;
-left: 0;
-display:none;
-margin-top: -10px;
-/*margin-left: -35px; */
-text-transform: uppercase;
-font-size: 15px;
-min-width: 100%;
-overflow: hidden;
-list-style:none;
+  display:        block;
+  text-transform: uppercase;
+  font-size:      15px;
+  white-space:    nowrap;
+  width:          auto;
+  position:       relative;
+  float:          right;
+  margin:         -10px -100px 0;
+  border-top-style: solid;
+  border-color: $basic-color;
+  
+}
+
+#tf-menu.navbar-default.when-top .navbar-nav .sub-menu a {
+  display:block;
+  padding:0 15px;
+  
+ }
+
+ #tf-menu.navbar-default.when-top .navbar-nav .sub-menu li {
+  position:relative;
+  margin: 0 -100px 0;
+  padding:0;
+  background-color: rgba(255, 0, 0, 0.3);
+  border-radius:  2px;
+ }
+
+#tf-menu.navbar-default.when-top .navbar-nav .sub-menu li:hover {
 
 }
 
@@ -74,17 +93,9 @@ list-style:none;
 display:none;
 margin-top: -10px;
 margin-left: -35px;
-
-}
-/*
-#tf-menu.navbar-default.when-top .navbar-nav li:hover ul {
-display:inline-block;
+width: auto;
 }
 
-#tf-menu.navbar-default.when-scrolled .navbar-nav li:hover ul {
-display:block;
-}
-*/
 #tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a 
 {
   color: #fff;
@@ -93,4 +104,13 @@ display:block;
 #tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a:hover
 {
   color: $basic-color;
+}
+.subDiv
+{
+  border-radius:  3px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.diff {
+  margin-left: 20px;
+  margin-top:  5px;
 }

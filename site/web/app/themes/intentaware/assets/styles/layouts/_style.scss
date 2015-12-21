@@ -201,5 +201,14 @@ button.btn.tf-btn.btn-default
 {
   max-height: 200px;
   max-width: 170px;
-  
+}
+.subDiv
+{
+  border-radius:  3px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.diff {
+  margin-left: 10px;
+  margin-top:  5px;
+  background-color: $basic-color;
 }
