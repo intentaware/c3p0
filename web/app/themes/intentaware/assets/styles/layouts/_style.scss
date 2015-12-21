@@ -197,3 +197,18 @@ button.btn.tf-btn.btn-default
   padding: 10px 7px 1px;
   background-color: #EEEEEE;
 }
+.thumbSec
+{
+  max-height: 200px;
+  max-width: 170px;
+}
+.subDiv
+{
+  border-radius:  3px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.diff {
+  margin-left: 10px;
+  margin-top:  5px;
+  background-color: $basic-color;
+}

@@ -11,4 +11,9 @@ jQuery(document).ready(function($){
       }
     }
   });
+  $(".page-scroll").mouseover(function() {
+    $(this).find("ul").wrap("<div class='subDiv'></div>").hide().css("display","block").fadeIn("250");
+  }).mouseout(function() {
+    $(this).find("ul").unwrap().css("display","none").fadeOut("250").hide();
+  });
 });
