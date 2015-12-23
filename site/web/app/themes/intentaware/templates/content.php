@@ -6,7 +6,10 @@
   <div class="entry-summary">
     <?php the_excerpt(); ?>
   </div>
+<<<<<<< HEAD
   <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
   <i class="material-icons">add</i>
 </button>
+=======
+>>>>>>> c0aac706e5488b8d021192038e52bd3c5826e975
 </article>
