@@ -1,83 +1,19 @@
-// Put your custom javascript function inside
-// JQuery(document).ready($) {}
-// function
+/* ========================================================================
+ * DOM-based Routing
+ * Based on http://goo.gl/EUTi53 by Paul Irish
+ *
+ * Only fires on body classes that match. If a body class contains a dash,
+ * replace the dash with an underscore when adding it to the object below.
+ *
+ * .noConflict()
+ * The routing is enclosed within an anonymous function so that you can
+ * always reference jQuery with $, even when in .noConflict() mode.
+ * ======================================================================== */
 
-jQuery(document).ready(function($) {
+(function($) {
+
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  (function() {
-    'use strict';
-
-    /* ==============================================
-     Testimonial Slider
-     =============================================== */
-
-    $('a.page-scroll').click(function() {
-      console.log("Link clicked");
-      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 40
-          }, 900);
-          return false;
-        }
-      }
-    });
-    /*====================================
-    Menu Change on Scroll
-    ======================================*/
-    $(window).bind('scroll', function() {
-      var navHeight = $(window).height() - 100;
-      if ($(window).scrollTop() > navHeight) {
-        $('.navbar-default').removeClass('when-top');
-        $('.navbar-default').addClass('when-scrolled');
-      } else {
-        $('.navbar-default').removeClass('when-scrolled');
-        $('.navbar-default').addClass('when-top');
-      }
-    });
-
-    $('body').scrollspy({
-      target: '.navbar-default',
-      offset: 80
-    });
-
-    /*====================================
-    Portfolio Isotope Filter
-    ======================================*/
-    $(window).load(function() {
-      var $container = $('#lightbox');
-      $container.isotope({
-        filter: '*',
-        animationOptions: {
-          duration: 750,
-          easing: 'linear',
-          queue: false
-        }
-      });
-      $('.cat a').click(function() {
-        $('.cat .active').removeClass('active');
-        $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-          filter: selector,
-          animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-          }
-        });
-        return false;
-      });
-
-    });
-
-
-
-  }());
-
   var Sage = {
     // All pages
     'common': {
@@ -138,4 +74,4 @@ jQuery(document).ready(function($) {
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-});
+})(jQuery); // Fully reference jQuery after this point.

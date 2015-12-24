@@ -1,36 +1,19 @@
-<?php if (is_front_page()) {
-  ?>
-      <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top when-top">
-      <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?php esc_url(home_url('/')); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo-full.png" class="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <?php
-            if (has_nav_menu('primary_navigation')) : ?>
-             <li><?php wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav navbar-right']); ?></li>
-             <?php
+<header class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+      <span class="android-title mdl-layout-title">
+          <a href="<?= esc_url(home_url('/')); ?>"><img class="brand android-logo-image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo-full.png"></a>
+      </span>
+      <div class="android-header-spacer mdl-layout-spacer"></div>
+      <div class="android-navigation-container">
+        <nav class="android-navigation mdl-navigation" id="navigation">
+          <?php
+            if (has_nav_menu('primary_navigation')) :
+              wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
             endif;
-            ?>
-           
-              
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--orange diff">
-                  Free Demo
-                </button>
-              
-           
-          </ul>
-        </div>
+          ?>
+        </nav>
       </div>
-    </nav>
-<body>
-<?php
-}
-?>
+    </div>
+  </div>
+</header>

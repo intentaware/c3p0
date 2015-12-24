@@ -6,4 +6,8 @@
   <div class="entry-summary">
     <?php the_excerpt(); ?>
   </div>
+
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
 </article>

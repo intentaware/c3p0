@@ -1,116 +1,22 @@
- #tf-menu {
-  padding: 5px;
-  transition: all 0.8s;
-  border-color: transparent !important;
-  width: auto;
-}
-
-.when-top {
-  background: transparent !important;
-  
-}
-
-.when-scrolled {
-  background: #EEEEEE;
-  padding: 0 !important;
-  color: #333;
-  
-}
-
-#tf-menu a.navbar-brand {
-  text-transform: uppercase;
-  font-size: 22px;
-  color: #fff;
-  font-weight: 900;
-}
-
-#tf-menu.navbar-default.when-top .navbar-nav > li > a {
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #fff;
-}
-
-#tf-menu.navbar-default.when-scrolled .navbar-nav > li > a {
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #333;
-}
-
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: $basic-color !important;
-  background-color: transparent;
-  font-weight: 700;
-}
-
-.navbar-toggle {
-  border-radius: 0;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: $basic-color;
-  border-color: $basic-color;
-}
-.navbar-default .navbar-toggle:hover>.icon-bar {
-  background-color: #FFF;
-}
-
-#tf-menu.navbar-default.when-top .navbar-nav .sub-menu{
-  display:        block;
-  text-transform: uppercase;
-  font-size:      15px;
-  white-space:    nowrap;
-  width:          auto;
-  position:       relative;
-  float:          right;
-  margin:         -10px -100px 0;
-  border-top-style: solid;
-  border-color: $basic-color;
-  
-}
-
-#tf-menu.navbar-default.when-top .navbar-nav .sub-menu a {
-  display:block;
-  padding:0 15px;
-  
- }
-
- #tf-menu.navbar-default.when-top .navbar-nav .sub-menu li {
-  position:relative;
-  margin: 0 -100px 0;
-  padding:0;
-  background-color: rgba(255, 0, 0, 0.3);
-  border-radius:  2px;
- }
-
-#tf-menu.navbar-default.when-top .navbar-nav .sub-menu li:hover {
-
-}
-
-#tf-menu.navbar-default.when-scrolled .navbar-nav .sub-menu{
-display:none;
-margin-top: -10px;
-margin-left: -35px;
-width: auto;
-}
-
-#tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a 
+.android-logo-image 
 {
-  color: #fff;
+	height: 100px;
+	width: 250px;
+}
+.android-header .mdl-menu__container
+{
+  z-index: 50;
+  margin: 0 !important;
+}
+.android-header
+{
+  overflow: visible;
+  background-color: #fff;
 }
 
-#tf-menu.navbar-default.when-top .navbar-nav .sub-menu > li> a:hover
-{
-  color: $basic-color;
-}
-.subDiv
-{
-  border-radius:  3px;
-  background-color: rgba(255, 0, 0, 0.3);
-}
-.diff {
-  margin-left: 20px;
-  margin-top:  5px;
+.nav >li >a {
+	color: #757575;
+	font-weight: 700;
+    font-size: 14px;
+    margin-top: -15px;
 }
