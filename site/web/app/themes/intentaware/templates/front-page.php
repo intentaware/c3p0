@@ -29,7 +29,7 @@ else
 		<a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan"><span class="color"><strong style="background-color: #6ab344"><?php the_title() ?></strong></span></div>
-          <div class="logo-font android-sub-slogan"><b class="rotate color">Orginization,Publisher,Advertiser</b></div>
+          <div class="logo-font android-sub-slogan"><b class="rotate">Orginization,Publisher,Advertiser</b></div>
           <div class="c2a">
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--orange mdl-button--accent">
   			Order Free Demo

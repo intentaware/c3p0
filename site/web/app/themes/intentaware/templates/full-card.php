@@ -1,9 +1,18 @@
 <!--Template Name: Full Card -->
-<div class="mdl-card amazing mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__title mdl-color-text--grey-50">
-      <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
-    </div>
-    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-      Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-    </div>
+<?php 
+	$content = $page->post_content;
+        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
+        $content = str_replace(']]>', ']]>', $content);
+?>
+<div id="<?php echo (str_replace(" ", "-", strtolower($page->post_title))); ?>">
+	<div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+	
+	    <div class="mdl-card__title mdl-color-text--grey-50">
+	    	<div class="node"></div>
+	      <h3 class="quote" ><a href="#"><div class="line"></div><strong><?php echo $page->post_title ?></strong></a></h3>
+	    </div>
+	    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+	      <?php echo $content ?>
+	    </div>
+	</div>
 </div>

@@ -8,12 +8,12 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: $sec-green;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: $sec-green;
   color: #fff;
 }
 
@@ -124,7 +124,7 @@ a img{
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: $sec-green;
     height: 160px;
   }
 
@@ -555,6 +555,9 @@ a img{
 
 .amazing .mdl-card__title {
   background-color: #263238;
+  background-image: url('/app/themes/intentaware/assets/images/node.png');
+  width: 100%;
+  height: 100%;
 }
 
 .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
@@ -576,5 +579,30 @@ a img{
 
 .color
 {
-  background-color:#6ab344;
+  background-color: $sec-green;
+}
+
+.node 
+{
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  background-repeat: no-repeat;
+}
+
+.quote > a {
+  color: #fff;
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.line
+{
+  background-color: $sec-green;
+  width: 5.5em;
+  height: 0.12em;
+  margin-bottom: -55px;
+  margin-left: 5px;
 }
