@@ -9,7 +9,7 @@
 	
 	    <div class="mdl-card__title mdl-color-text--grey-50">
 	    	<div class="node"></div>
-	      <h3 class="quote" ><a href="#"><div class="line"></div><strong><?php echo $page->post_title ?></strong></a></h3>
+	      <h3 class="quote"><a href="#"><div class="line"></div><strong><?php echo $page->post_title ?></strong></a></h3>
 	    </div>
 	    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
 	      <?php echo $content ?>
