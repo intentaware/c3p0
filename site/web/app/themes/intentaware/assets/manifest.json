@@ -2,12 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-<<<<<<< HEAD
         "scripts/main.js",
         "scripts/custom_built.js"
-=======
-        "scripts/main.js"
->>>>>>> c0aac706e5488b8d021192038e52bd3c5826e975
       ],
       "main": true
     },
