@@ -1,37 +1,45 @@
-body {
+body 
+{
   margin: 0;
 }
 
 /* Disable ugly boxes around images in IE10 */
-a img{
+a img
+{
   border: 0px;
 }
 
-::-moz-selection {
+::-moz-selection 
+{
   background-color: $sec-green;
   color: #fff;
 }
 
-::selection {
+::selection 
+{
   background-color: $sec-green;
   color: #fff;
 }
 
-.android-search-box .mdl-textfield__input {
+.android-search-box .mdl-textfield__input 
+{
   color: rgba(0, 0, 0, 0.87);
 }
 
-.android-header .mdl-menu__container {
+.android-header .mdl-menu__container 
+{
   z-index: 50;
   margin: 0 !important;
 }
 
 
-.mdl-textfield--expandable {
+.mdl-textfield--expandable 
+{
   width: auto;
 }
 
-.android-fab {
+.android-fab 
+{
   position: absolute;
   right: 20%;
   bottom: -26px;
@@ -40,44 +48,52 @@ a img{
   color: black !important;
 }
 
-.android-mobile-title {
+.android-mobile-title 
+{
   display: none !important;
 }
-.android-header .material-icons {
+
+.android-header .material-icons 
+{
     color: #767777 !important;
 }
 
-  .android-header .mdl-layout__drawer-button {
-    background: transparent;
-    color: #767777;
-  }
+.android-header .mdl-layout__drawer-button 
+{
+  background: transparent;
+  color: #767777;
+}
 
-  .android-header .mdl-navigation__link {
-    color: #757575;
-    font-weight: 700;
-    font-size: 14px;
-  }
+.android-header .mdl-navigation__link 
+{
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
 
-  .android-navigation-container {
+.android-navigation-container 
+{
     /* Simple hack to make the overflow happen to the left instead... */
-    direction: rtl;
-    order: 1;
-    width: 500px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  direction: rtl;
+  order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .android-navigation {
-    /* ... and now make sure the content is actually LTR */
-    direction: ltr;
-    justify-content: flex-end;
-    width: 800px;
-  }
+.android-navigation 
+{
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  justify-content: flex-end;
+  width: 800px;
+}
 
-  .android-search-box.is-focused + .android-navigation-container {
-    opacity: 0;
-    width: 100px;
-  }
+.android-search-box.is-focused + .android-navigation-container 
+{
+  opacity: 0;
+  width: 100px;
+}
 
 
   .android-navigation .mdl-navigation__link {
@@ -135,11 +151,8 @@ a img{
 
 .android-be-together-section {
   position: relative;
-  height: 525px;
+  height: 550px;
   width: auto;
-  background-color: #f3f3f3;
-  background: url('...') center 30% no-repeat;
-  background-size: cover;
 }
 
 .logo-font {
@@ -270,7 +283,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('/app/themes/intentaware/assets/images/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -340,7 +353,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  background: url('/app/themes/intentaware/assets/images/devices.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
@@ -468,10 +481,6 @@ a img{
 
   .android-search-box .mdl-textfield__expandable-holder {
     width: 100%;
-  }
-
-  .android-be-together-section {
-    height: 350px;
   }
 
   .android-slogan {
@@ -605,4 +614,8 @@ a img{
   height: 0.12em;
   margin-bottom: -55px;
   margin-left: 5px;
+}
+.offersBg
+{
+  background-color: blue;
 }
