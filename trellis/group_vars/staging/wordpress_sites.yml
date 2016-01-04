@@ -2,7 +2,7 @@
 wordpress_sites:
   wp.intentaware.com:
     site_hosts:
-      - wp.intentaware.com
+      - intentaware.com
     local_path: ../release # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:intentaware/c3p0.git
     branch: release
@@ -17,8 +17,8 @@ wordpress_sites:
       duration: 30s
     env:
       disable_wp_cron: true
-      wp_home: http://wp.intentaware.com
-      wp_siteurl: http://wp.intentaware.com/wp
+      wp_home: http://intentaware.com
+      wp_siteurl: http://intentaware.com/wp
       wp_env: staging
       db_name: wp_stage
       db_user: wp_stage
