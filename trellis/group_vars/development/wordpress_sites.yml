@@ -6,6 +6,8 @@ wordpress_sites:
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     site_install: true
     site_title: Intentaware
+    db_create: true
+    db_import: ../backup/dump.sql
     admin_user: hansolo
     admin_password: plotograph
     admin_email: admin@intentaware.dev

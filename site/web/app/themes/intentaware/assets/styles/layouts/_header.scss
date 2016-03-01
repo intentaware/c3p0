@@ -1,0 +1,22 @@
+.android-logo-image 
+{
+	height: 100px;
+	width: 250px;
+}
+.android-header .mdl-menu__container
+{
+  z-index: 50;
+  margin: 0 !important;
+}
+.android-header
+{
+  overflow: visible;
+  background-color: #fff;
+}
+
+.nav >li >a {
+	color: #757575;
+	font-weight: 700;
+    font-size: 14px;
+    margin-top: -15px;
+}
