@@ -22,12 +22,19 @@ do_release_management () {
   cd ".."
 }
 
+do_deploy () {
+  cd "trellis"
+  ./publish.sh
+}
+
 
 if [ -d release/ ] ; then
   do_rsync
   do_release_management
+  do_deploy
 else
   do_clone
   do_rsync
   do_release_management
+  do_deploy
 fi
