@@ -18,11 +18,11 @@
 - name: Fail if project_subtree_path is set incorrectly
   fail:
     msg: "subtree is set to '{{ project_subtree_path }}' but that path does not exist in the repo. Edit `subtree_path` for '{{ site }}' in `wordpress_sites.yml`."
-  when: project_subtree_path != 'False' and not project_subtree_full_path.stat.exists
+  when: project_subtree_path != '.' and not project_subtree_full_path.stat.exists
 
 - name: Move project subtree into root folder
   shell: mv {{ deploy_helper.new_release_path }}/{{ project_subtree_path }}/* {{ deploy_helper.new_release_path }}
-  when: project_subtree_path != 'False'
+  when: project_subtree_path != '.'
 
 - name: Remove unwanted files/folders from new release
   file:
