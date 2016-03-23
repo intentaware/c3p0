@@ -1,0 +1,17 @@
+---
+- name: Determine Remote User
+  hosts: web
+  gather_facts: false
+  roles:
+    - { role: remote-user, tags: [remote-user, always] }
+
+- name: Install Wordpress
+  hosts: web
+  sudo: yes
+  vars_files:
+    - vars/sudoer_passwords.yml
+  roles:
+    - { role: hhvm, when: hhvm, tags: [hhvm] }
+    - { role: nginx, tags: [nginx] }
+    # - { role: wp-cli, tags: [wp-cli] }
+    # - { role: wordpress-install, tags: [wordpress, wordpress-install] }
