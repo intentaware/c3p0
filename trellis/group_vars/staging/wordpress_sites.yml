@@ -33,3 +33,36 @@ wordpress_sites:
       secure_auth_salt: "_PnL]BnWSQ?OYfXi3}VZ9J|VQ,DZCW3<;8lM]X[SSmPg}F]m.LzY[lumzphKp#&:"
       logged_in_salt: "2=>.({0A-e&k!ehAI%&p48zua`eL;i+8;0xW~Fmk+ *4J2hExTYVo-a2k*DqcsS."
       nonce_salt: "8(qd^`uMC<oWH7.S--:lV(aZnFO:Ks`=umGs-&Ozg]tV?$sTO>91oHPMMOq1jgW>"
+  wp2.intentaware.com:
+    site_hosts:
+      - wp2.intentaware.com
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:intentaware/c3p0.git
+    branch: webmobi
+    subtree_path: site # relative path to your Bedrock/WP directory in your repo (above) if it is not the root (like the roots-example-project structure)
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: false
+    cache:
+      enabled: false
+      duration: 30s
+    env:
+      disable_wp_cron: true
+      wp_home: http://wp2.intentaware.com
+      wp_siteurl: http://wp2.intentaware.com/wp
+      wp_env: staging
+      db_name: wp2
+      db_user: wp2
+      db_password: th3Al1sing1ngDanc3craPofth3world
+      # Generate your keys here: https://api.wordpress.org/secret-key/1.1/salt/
+      # These CANNOT contain the characters "{%" in succession
+      auth_key: "~WZkH}J2(j!*n@nI 41YT6Q(ekyW}CIlx%P>,; !%D;{7c@ 45L6_)XAywt6/7=,"
+      secure_auth_key: "hs8]W@z-p6qEwf)~FTvEuRcFa9D+>9,@?gsOty/ Z7w}(3wOL4Fh@GT8|F5|-Y@h"
+      logged_in_key: "T+>Zx_nkJ0249J|7MUd.FLTY<<|PQS|7@osUz+!heC*NT(l6%5X~p#XG6LDMz=B,"
+      nonce_key: "E6&#<ttGkZcU5gpq:m.fPtzZ+`r]4#DA:d}=)XFFmCG9_Mr0V{M]_?0IW)8q-Na|"
+      auth_salt: "vv[CR=m>{tZrf|Gnk44x^ud@$6<$<UW-8t~GFNPTyP;[6AN4T#F{V_*Fv0StBX[7"
+      secure_auth_salt: "dNa-J,gsop{pFF0p<m .%M[>SAglV<?Iumrx8]:xRdN]?LwM5!-J|666n+OD]L2J"
+      logged_in_salt: "-2z[+rFUqA:w{$.81@Lp8z<^>%>G2B` s>f+EuQ5a4oaNz/S}kihzn~{<H+x:^U?"
+      nonce_salt: "|-K9PZ|C]#Q!ao_;e5`Y,(phUBB[UqiV`8*JL>%_i=i2|nWZF$B<_ik6Q*weAl~_"
