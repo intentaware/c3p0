@@ -43,4 +43,16 @@ it is basically the theme directory for wordpress
 
 The ```site/web/app/``` folder is basically the ```wp-content``` folder. if you want to install plugins, just put it in here.
 
-# Happy coding
+# Releasing
+
+If your public key is properly accepted at server just do
+
+```bash
+./publish.sh
+```
+
+and all your new code will be made available on the server. magic!
+
+### One more thing
+
+happy coding.
