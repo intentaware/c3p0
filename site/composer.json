@@ -24,7 +24,8 @@
     "forum": "https://discourse.roots.io/category/bedrock"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "secure-http": false
   },
   "repositories": [
     {
@@ -38,13 +39,17 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.3.1",
     "wpackagist-plugin/akismet": "3.1.5",
-    "wpackagist-plugin/contact-form-7": "4.3.1"
+    "wpackagist-plugin/contact-form-7": "4.3.1",
+    "wpackagist-plugin/option-tree": "2.6.0",
+    "wpackagist-plugin/types": "1.9.1"
   },
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
           "type:wordpress-muplugin",
-          "wpackagist-plugin/contact-form-7"
+          "wpackagist-plugin/contact-form-7",
+          "wpackagist-plugin/option-tree",
+          "wpackagist-plugin/types"
         ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
