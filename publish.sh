@@ -24,7 +24,7 @@ do_release_management () {
 
 do_deploy () {
   cd "trellis"
-  ./publish.sh
+  ./deploy.sh
 }
 
 
