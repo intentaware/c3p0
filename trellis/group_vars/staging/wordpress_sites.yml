@@ -56,6 +56,7 @@ wordpress_sites:
       db_name: wp2
       db_user: wp2
       db_password: th3Al1sing1ngDanc3craPofth3world
+      db_prefix: intent_
       # Generate your keys here: https://api.wordpress.org/secret-key/1.1/salt/
       # These CANNOT contain the characters "{%" in succession
       auth_key: "~WZkH}J2(j!*n@nI 41YT6Q(ekyW}CIlx%P>,; !%D;{7c@ 45L6_)XAywt6/7=,"
