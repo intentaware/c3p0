@@ -76,4 +76,4 @@ if (!defined('ABSPATH')) {
 /**
  * Default Theme
  */
-define('WP_DEFAULT_THEME', 'intentaware');
+define('WP_DEFAULT_THEME', 'ia2');
