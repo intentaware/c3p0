@@ -54,7 +54,7 @@ body {
     font-family:"GothamBook-Regular";
     font-size: 16px;
     overflow-x: hidden !important;
-    color: #838282;
+    color: #000;
 }
 p{line-height:18px;}
 ul{
@@ -206,7 +206,7 @@ width: 100%;
 width: 100%;
 }
 .header-overlay{
-background-color: rgba(0, 0, 0, 0.4);
+background-color: rgba(0, 0, 0, 0);
 height: 100%;
 left: 0;
 position: absolute;
@@ -219,7 +219,7 @@ float: left;
 width: 100%;
 height: 100%;
 padding: 140px;
-margin-top:170px;
+margin-top:100px;
 text-align: center;
 }
 .header-content h2 {
@@ -466,7 +466,7 @@ color: #222;
 font-size: 36px;
 margin-bottom: 0;
 padding-bottom: 60px;
-font-family:"GothamBold-Regular";
+font-family:"Sans-serif";
 text-transform:uppercase;
 }
 .tittle_2 {
@@ -1463,6 +1463,7 @@ width: 100%;
 .single-from-blog .blog-title h2 {
 color: #3e3e3e;
 font-size: 20px;
+line-height:23px;
 padding-bottom: 0;
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
@@ -1671,7 +1672,7 @@ width: 100%;
 /*--------------------*/
 
 #footer{
-background-color: #242424;
+background-color: #2e85aa;
 display: inline;
 float: left;
 margin-top: -6px;
@@ -1714,7 +1715,7 @@ text-align: center;
 transition: all 0.5s;
 }
 .footer-social a:hover{
-color: #11749e;
+color: #ff0000;
 text-decoration:none;
 }
 .footer-bottom{
@@ -3241,4 +3242,17 @@ text-align: center;
     
    clear:both !important;
     text-align:center !important; 
+}
+.single-from-blog .moretag{
+    
+    margin-left:20px;
+}
+#homecarousel{
+    
+    overflow: initial !important;
+}
+.h-landmark span {
+    display: inline-block;
+    font-family: "Sans-serif" !important;
+    position: relative;
 }

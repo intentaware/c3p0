@@ -9,20 +9,85 @@
     <div class="header-inner">
         <!-- Header image -->
         <img src="<?php echo ot_get_option('home_page_background'); ?>" alt="img">
+        <!--<div class="header-overlay">
+        <div class="header-content">
+        <h2 class="header-slide"><?php echo ot_get_option('heading_after_menu'); ?>
+        <span><?php echo ot_get_option('text_after_heading'); ?></span>
+        </h2>
+        <div class="header-btn-area">
+        <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+        </div>
+        </div>
+        </div>-->
         <div class="header-overlay">
             <div class="header-content">
-                <!-- Start header content slider -->
-                <h2 class="header-slide"><?php echo ot_get_option('heading_after_menu'); ?>
-                    <span><?php echo ot_get_option('text_after_heading'); ?></span>
-                </h2>
-                <!-- End header content slider -->  
-                <!-- Header btn area -->
-                <div class="header-btn-area">
-                    <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
-                    <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                   <!-- <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>-->
+
+                    <!-- Wrapper for slides -->
+                    <div id="homecarousel" class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            
+                                    <!-- Start header content slider -->
+                                    <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                        <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                                    </h2>
+                                    <!-- End header content slider -->  
+                                    <!-- Header btn area -->
+                                    <div class="header-btn-area">
+                                        <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                        <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                                    </div>
+                                
+                        </div>
+                        <div class="item">
+                            
+                                    <!-- Start header content slider -->
+                                    <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                        <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                                    </h2>
+                                    <!-- End header content slider -->  
+                                    <!-- Header btn area -->
+                                    <div class="header-btn-area">
+                                        <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                        <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                                    </div>
+                                
+                        </div>
+
+                        <div class="item">
+                            
+                                    <!-- Start header content slider -->
+                                    <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                        <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                                    </h2>
+                                    <!-- End header content slider -->  
+                                    <!-- Header btn area -->
+                                    <div class="header-btn-area">
+                                        <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                        <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                                    </div>
+                                
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>-->
                 </div>
             </div>
-        </div>      
+        </div>
     </div>
 </header>
 
@@ -140,7 +205,7 @@
             <div class="col-md-12">
                 <div class="from-blog-area">
                     <div class="title-area">
-                        <h2 class="tittle">Latest news</h2>
+                        <h2 class="tittle">Resources</h2>
                         <!--              <span class="tittle-line"></span>
                         -->             
                     </div>
@@ -148,7 +213,7 @@
                     <!-- From Blog content -->
                     <div class="from-blog-content">
                         <?php
-                            $args=array('post_type' => 'our-news','posts_per_page' => 4,'post_status' => 'publish',);
+                            $args=array('post_type' => 'post','posts_per_page' => 4,'post_status' => 'publish',);
 
                             $my_query = null;
                             $my_query = new WP_Query($args); 
@@ -156,20 +221,20 @@
                             ?>
                             <div class="row">
                                 <?php  while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="single-from-blog">
-                                        <figure>
-                                            <a href="<?php the_permalink();?>"><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(get_the_ID()));?>" alt="img"></a>
-                                        </figure>
-                                        <div class="blog-title">
-                                            <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                                            <p><span class="blog-date"><?php echo get_the_date(); ?></span></p>
-                                        </div>
-                                        <p><?php the_excerpt();?></p>
+                                    <div class="col-sm-6 col-md-3">
+                                        <article class="single-from-blog">
+                                            <figure>
+                                                <a href="<?php the_permalink();?>"><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(get_the_ID()));?>" alt="img"></a>
+                                            </figure>
+                                            <div class="blog-title">
+                                                <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                                                <p><span class="blog-date"><?php echo get_the_date(); ?></span></p>
+                                            </div>
+                                            <p><?php the_excerpt();?></p>
 
-                                    </article>
-                                </div>
-                                <?php endwhile; ?>
+                                        </article>
+                                    </div>
+                                    <?php endwhile; ?>
                             </div>    
                             <?php }  
                             wp_reset_query(); ?>
