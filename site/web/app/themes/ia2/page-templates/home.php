@@ -9,20 +9,85 @@
     <div class="header-inner">
         <!-- Header image -->
         <img src="<?php echo ot_get_option('home_page_background'); ?>" alt="img">
+        <!--<div class="header-overlay">
+        <div class="header-content">
+        <h2 class="header-slide"><?php echo ot_get_option('heading_after_menu'); ?>
+        <span><?php echo ot_get_option('text_after_heading'); ?></span>
+        </h2>
+        <div class="header-btn-area">
+        <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+        </div>
+        </div>
+        </div>-->
         <div class="header-overlay">
             <div class="header-content">
-                <!-- Start header content slider -->
-                <h2 class="header-slide"><?php echo ot_get_option('heading_after_menu'); ?>
-                    <span><?php echo ot_get_option('text_after_heading'); ?></span>
-                </h2>
-                <!-- End header content slider -->  
-                <!-- Header btn area -->
-                <div class="header-btn-area">
-                    <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
-                    <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!-- <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>-->
+
+                    <!-- Wrapper for slides -->
+                    <div id="homecarousel" class="carousel-inner" role="listbox">
+                        <div class="item active">
+
+                            <!-- Start header content slider -->
+                            <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                            </h2>
+                            <!-- End header content slider -->  
+                            <!-- Header btn area -->
+                            <div class="header-btn-area">
+                                <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                            </div>
+
+                        </div>
+                        <div class="item">
+
+                            <!-- Start header content slider -->
+                            <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                            </h2>
+                            <!-- End header content slider -->  
+                            <!-- Header btn area -->
+                            <div class="header-btn-area">
+                                <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <!-- Start header content slider -->
+                            <h2><?php echo ot_get_option('heading_after_menu'); ?>
+                                <span></br><?php echo ot_get_option('text_after_heading'); ?></span>
+                            </h2>
+                            <!-- End header content slider -->  
+                            <!-- Header btn area -->
+                            <div class="header-btn-area">
+                                <a class="knowmore-btn" href="<?php echo ot_get_option('button_link'); ?>"><?php echo ot_get_option('button_text'); ?></a>
+                                <!--          <a class="download-btn" href="#">LOREAM</a>-->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>-->
                 </div>
             </div>
-        </div>      
+        </div>
     </div>
 </header>
 
@@ -76,8 +141,144 @@
 
     </div>
 </section> 
-<section>
 
+
+<section  style="display:inline-block;">
+    <div id="section-2" class="section-wrapper">
+        <a id="iq-decision-engine" class="jumpto-anchor"></a>
+        <div class="section-content-wrapper row">
+            <div class="section-content col-md-12">
+                <div class="section-slide-set cf">
+                    <div class="section-slide-cover-wrapper col-md-6">
+                        <h2>IntentAware Features.</h2>
+                        <div class="section-slide-cover-wrapper-desktop row hidden-xs">
+                            <div class="section-slide-cover-col-wrapper cf">
+                                <div class="section-slide-cover-col-1 section-slide-cover-col col-md-4">
+                                    <a href="#intent-quality-slide-1" data-idx='0' class="slide-cover-button">
+                                        <div class="slide-cover-img"><img src="<?php echo ot_get_option('first_features_main_image'); ?>"></div>
+                                        <h3><?php echo ot_get_option('first_featurs_heading'); ?></h3>
+                                    </a>
+                                    <div class="about-btn-area" style="float: none;">
+                                        <a href="#intent-quality-slide-1" style="float: none;" data-text="<?php echo ot_get_option('first_features_title'); ?>" data-idx='0' class="button button-default slide-cover-button box-button">
+                                            <span>
+                                                <?php echo ot_get_option('first_features_title'); ?>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="section-slide-cover-col-2 section-slide-cover-col col-md-4">
+                                    <a href="#intent-quality-slide-2" data-idx='1' class="slide-cover-button">
+                                        <div class="slide-cover-img"><img src="<?php echo ot_get_option('second_features_main_image'); ?>"></div>
+                                        <h3><?php echo ot_get_option('second_featurs_heading'); ?></h3>
+                                    </a>
+                                    <div class="about-btn-area" style="float: none;">
+                                        <a href="#intent-quality-slide-2" style="float: none;" data-text="<?php echo ot_get_option('second_featurs_heading'); ?>" data-idx='1' class="button button-default slide-cover-button box-button">
+                                            <span><?php echo ot_get_option('second_features_title'); ?></span></a>
+                                    </div>
+                                </div>
+                                <div class="section-slide-cover-col-3 section-slide-cover-col col-md-4">
+                                    <a href="#intent-quality-slide-3" data-idx='2' class="slide-cover-button">
+                                        <div class="slide-cover-img"><img src="<?php echo ot_get_option('third_features_main_image'); ?>"></div>
+                                        <h3><?php echo ot_get_option('third_featurs_heading'); ?></h3>
+                                    </a>
+                                    <div class="about-btn-area" style="float: none;">
+                                        <a href="#intent-quality-slide-3" style="float: none;" data-text="<?php echo ot_get_option('third_features_title'); ?>" data-idx='2' class="button button-default slide-cover-button box-button">
+                                            <span><?php echo ot_get_option('third_features_title'); ?></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="section-slide-wrapper col-md-6 hidden-xs">
+                        <div class="section-slide-navigation">
+                            <a href="#" class="back-btn"><i class="fa fa-chevron-left"></i> Back</a>
+                            <div class="section-slide-navigation-list">
+                                <a href="#intent-quality-slide-1"><?php echo ot_get_option('first_featurs_heading'); ?></a>/
+                                <a href="#intent-quality-slide-2"><?php echo ot_get_option('second_featurs_heading'); ?></a>/
+                                <a href="#intent-quality-slide-3"><?php echo ot_get_option('third_featurs_heading'); ?></a></div>
+                        </div>
+                        <div class="section-slide-container">
+                            <div class="section-slides">
+                                <div id="intent-quality-slide-1-slide" class="section-slide">
+                                    <div class="section-slide-inner col-md-10 col-md-offset-1">
+                                        <div class="section-slide-col col-md-6">
+                                            <h3><?php echo ot_get_option('first_features_title'); ?></h3>
+                                            <?php echo ot_get_option('first_features_descreption'); ?>
+                                        </div>
+                                        <div class="section-slide-col col-md-6">
+                                            <div class="img-bitmap-block img-block"><img class="img-responsive" src="<?php echo ot_get_option('first_features_slider_image'); ?>" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="intent-quality-slide-2-slide" class="section-slide">
+                                    <div class="section-slide-inner col-md-10 col-md-offset-1">
+                                        <div class="section-slide-col col-md-6">
+                                            <h3><?php echo ot_get_option('second_features_title'); ?></h3>
+                                            </h3>
+                                            <?php echo ot_get_option('second_features_descreption'); ?>
+                                        </div>
+                                        <div class="section-slide-col col-md-6">
+                                            <div class="img-bitmap-block img-block"><img class="img-responsive" src="<?php echo ot_get_option('second_features_slider_image'); ?>" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="intent-quality-slide-3-slide" class="section-slide">
+                                    <div class="section-slide-inner col-md-10 col-md-offset-1">
+                                        <div class="section-slide-col col-md-6">
+                                            <h3><?php echo ot_get_option('third_features_title'); ?></h3>
+                                            <?php echo ot_get_option('third_features_descreption'); ?>
+                                        </div>
+                                        <div class="section-slide-col col-md-6">
+                                            <div class="img-bitmap-block img-block"><img class="img-responsive" src="<?php echo ot_get_option('third_features_slider_image'); ?>" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row visible-xs" style="background: #F6F6F6;">
+        <div class="col-md-12">
+        <div class="feature_container col-md-4">
+            <div class="col-md-12">
+                <div class="img-container"><img class="img-responsive" src="<?php echo ot_get_option('first_features_slider_image'); ?>" alt=""></div>
+            </div>
+            <div class="col-md-12">
+                <h3><?php echo ot_get_option('first_features_title'); ?></h3>
+                <?php echo ot_get_option('first_features_descreption'); ?>
+            </div>
+        </div>
+        <div class="feature_container col-md-4">
+
+            <div class="col-md-12">
+                <div class="img-container"><img class="img-responsive" src="<?php echo ot_get_option('second_features_slider_image'); ?>" alt=""></div>
+            </div>
+            <div class="col-md-12">
+                <h3><?php echo ot_get_option('second_features_title'); ?></h3>
+                <?php echo ot_get_option('second_features_descreption'); ?>
+            </div>
+
+        </div>
+
+        <div class="feature_container col-md-4">
+            <div class="col-md-12">
+                <div class="img-container"><img class="img-responsive" src="<?php echo ot_get_option('third_features_slider_image'); ?>" alt=""></div>
+            </div>
+            <div class="col-md-12">
+                <h3><?php echo ot_get_option('third_features_title'); ?></h3>
+                <?php echo ot_get_option('third_features_descreption'); ?>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</section>
+
+<section style="display:inline-block;">
     <div class="row">
         <div class="col-md-12">
             <div class="about-area">
@@ -140,7 +341,7 @@
             <div class="col-md-12">
                 <div class="from-blog-area">
                     <div class="title-area">
-                        <h2 class="tittle">Latest news</h2>
+                        <h2 class="tittle">Resources</h2>
                         <!--              <span class="tittle-line"></span>
                         -->             
                     </div>
@@ -148,7 +349,7 @@
                     <!-- From Blog content -->
                     <div class="from-blog-content">
                         <?php
-                            $args=array('post_type' => 'our-news','posts_per_page' => 4,'post_status' => 'publish',);
+                            $args=array('post_type' => 'post','posts_per_page' => 4,'post_status' => 'publish',);
 
                             $my_query = null;
                             $my_query = new WP_Query($args); 
@@ -156,20 +357,20 @@
                             ?>
                             <div class="row">
                                 <?php  while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="single-from-blog">
-                                        <figure>
-                                            <a href="<?php the_permalink();?>"><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(get_the_ID()));?>" alt="img"></a>
-                                        </figure>
-                                        <div class="blog-title">
-                                            <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                                            <p><span class="blog-date"><?php echo get_the_date(); ?></span></p>
-                                        </div>
-                                        <p><?php the_excerpt();?></p>
+                                    <div class="col-sm-6 col-md-3">
+                                        <article class="single-from-blog">
+                                            <figure>
+                                                <a href="<?php the_permalink();?>"><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(get_the_ID()));?>" alt="img"></a>
+                                            </figure>
+                                            <div class="blog-title">
+                                                <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                                                <p><span class="blog-date"><?php echo get_the_date(); ?></span></p>
+                                            </div>
+                                            <p><?php the_excerpt();?></p>
 
-                                    </article>
-                                </div>
-                                <?php endwhile; ?>
+                                        </article>
+                                    </div>
+                                    <?php endwhile; ?>
                             </div>    
                             <?php }  
                             wp_reset_query(); ?>
@@ -183,7 +384,7 @@
 
 <!-- Start call to action -->
 <section id="call-to-action">
-    <img src="<?php bloginfo('template_url'); ?>/assets/images/call-to-action-bg.png" alt="img">
+    <!--<img src="<?php bloginfo('template_url'); ?>/assets/images/call-to-action-bg.png" alt="img">-->
     <div class="call-to-overlay">
         <div class="container">
             <div class="call-to-content wow fadeInUp">
