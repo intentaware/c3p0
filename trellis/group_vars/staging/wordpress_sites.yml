@@ -23,6 +23,7 @@ wordpress_sites:
       db_name: wp_stage
       db_user: wp_stage
       db_password: th3Al1sing1ngDanc3craPofth3world
+      db_prefix: intent_
       # Generate your keys here: https://api.wordpress.org/secret-key/1.1/salt/
       # These CANNOT contain the characters "{%" in succession
       auth_key: "S6JLD=t>]UO]>HJI&uE0:J08x8bKA8SOJN%9qo]a~I})eO;I3|C*6,UVTbe;2U5Z"
