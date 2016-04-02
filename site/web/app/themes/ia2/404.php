@@ -16,7 +16,7 @@
                 <div class="x-main full" role="main">
                     <section class="error-404 not-found">
                         <header class="page-header">
-                            <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.'); ?></h1>
+                            <h3 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.'); ?></h3>
                         </header><!-- .page-header -->
 
                         <div class="page-content">

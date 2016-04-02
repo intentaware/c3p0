@@ -12,7 +12,7 @@
     <?php twentysixteen_post_thumbnail(); ?>
     <div class="entry-wrap">
         <header class="entry-header">
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php the_title( '<h2 style="font-size:20px;" class="entry-title">', '</h1>' ); ?>
 
             <p class="p-meta">
                 <span><i class="fa fa-pencil"></i><?php the_author(); ?></span>

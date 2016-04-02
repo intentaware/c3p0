@@ -3,16 +3,16 @@ Template Design By MarkUps.
 Author URI : http://www.markups.io/
 ========================================*/
 
-.header-content h2 span {
+.header-content h2 p {
   color: #FF0000;
-  font-weight:bold;
+  font-weight:900;
 }
 .knowmore-btn:hover,
 .knowmore-btn:focus,
 .download-btn:hover,
 .download-btn:focus{
-  background-color: #2e85aa;
-  border-color: #2e85aa;
+  background-color: #ff0000;
+  border-color: #ff0000;
 }
 .main-nav li a:hover{
   color: #b13847;

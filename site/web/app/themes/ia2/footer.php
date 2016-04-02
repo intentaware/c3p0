@@ -1,6 +1,6 @@
 <!-- Start Footer -->    
 <footer id="footer">
-    <div class="footer-top">
+   <!-- <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="footer-bottom">
         <p>&copy; <?php echo date('Y'); ?> - <a href="<?php echo get_bloginfo('home'); ?>"><?php echo ot_get_option('copyright_text'); ?></a>&nbsp;All Right Reserved</p>
     </div>

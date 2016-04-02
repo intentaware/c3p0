@@ -20,7 +20,7 @@
         <section class="main">
             <div class="row">
                 <header class="x-header-landmark x-container max width">
-                    <h1 class="h-landmark"><span><?php the_title(); ?></span></h1>
+                    <h3 class="h-landmark"><span><?php the_title(); ?></span></h3>
                 </header>
                 <p class="p-landmark-sub"><span></span></p>
                 <div class="x-container max width offset">

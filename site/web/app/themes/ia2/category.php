@@ -19,11 +19,11 @@
                 <?php if ( have_posts() ) : ?>
 
                     <header class="x-header-landmark x-container max width">
-                        <h1 class="h-landmark">
+                        <h3 class="h-landmark">
                             <span>
                                 <?php printf( __( 'Category Archive') ); ?>
                             </span>
-                        </h1>
+                        </h3>
 
                         <p class="p-landmark-sub">
                             <span>
