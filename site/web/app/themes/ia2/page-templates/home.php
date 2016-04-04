@@ -108,7 +108,7 @@
                     <div class="section-content-wrapper row">
                         <div class="welcome-area">
                             <div class="title-area">            
-                                <h2 class="tittle" style="color:#fff;">IntentAware Features</h2>
+                                <h2 class="tittle" style="color:#fff;"><?php echo ot_get_option('features_heading'); ?></h2>
                             </div>
                             <div class="section-slide-cover-wrapper col-md-12 hidden-xs">
                                 <div class="welcome-content section-slide-cover-col-wrapper">
@@ -314,12 +314,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="from-blog-area">
-                    <div class="title-area">
-                        <h2 class="tittle">Resources</h2>
+                    <div class="title-area" <?php if(ot_get_option('resources_header_back_image') != ''){ ?> style="background: rgba(0, 0, 0, 0) url('<?php echo ot_get_option('resources_header_back_image'); ?>') no-repeat scroll center center;" <?php } ?>>
+                        <h2 class="tittle"><?php echo ot_get_option('resources_section_heading'); ?></h2>
                         <!--              <span class="tittle-line"></span>
                         -->             
                     </div>
-                    <p class="add">We love advertising and advanced digital solutions.</p>
+                    <p class="add"><?php echo ot_get_option('resources_text_after_heading'); ?></p>
                     <!-- From Blog content -->
                     <div class="from-blog-content">
                         <?php
@@ -331,7 +331,7 @@
                             ?>
                             <div class="row">
                                 <?php  while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                    <div class="col-sm-6 col-md-3">
+                                    <div class="col-sm-6 col-md-3 rs">
                                         <article class="single-from-blog">
                                             <figure>
                                                 <a href="<?php the_permalink();?>"><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id(get_the_ID()));?>" alt="img"></a>
@@ -342,7 +342,7 @@
                                             </div>
                                             
                                             <div class="resource_content">
-                                                <p><?php echo intent_get_the_popular_excerpt(get_the_content(), 500); ?></p>
+                                                <p><?php echo intent_get_the_popular_excerpt(get_the_content(), 70); ?></p>
                                             </div>
                                             
                                             <div class="resouce_more">
@@ -476,31 +476,14 @@ Loeam ipsum is simply text
 <!-- End Testimonial section -->
 
 <!-- Start Contact section -->
-<section id="contact">
+<section id="contact" <?php if(ot_get_option('here_about_section_background') != ''){ ?> style="background-image: url('<?php echo ot_get_option('here_about_section_background')?>');" <?php }else{ ?> style="background-color: #555;" <?php } ?>>
     <div class="container">
         <div class="row">
 
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="contact-right wow fadeInRight">
-                    <h2>We’d love to hear about your project.</h2>
-                    <!-- <form action="" class="contact-form">
-                    <div class="form-group col-md-4">                
-                    <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group col-md-4">                
-                    <input type="email" class="form-control" placeholder="Enter Email">
-                    </div>
-                    <div class="form-group col-md-4">                
-                    <input type="email" class="form-control" placeholder="Phone">
-                    </div>              
-                    <div class="form-group col-md-12">
-                    <textarea class="form-control"></textarea>
-                    </div>
-                    <div class="header-btn-area">
-                    <a class="knowmore-btn" href="#">KNOW MORE</a>
-                    </div>
-                    </form>-->
-                    <?php echo do_shortcode('[contact-form-7 id="69" title="Contact form 1" html_id="contact-form-69" html_class="contact-form"]'); ?>
+                    <h2 <?php if(ot_get_option('here_bout_title_back_image') != ''){ ?> style="background: rgba(0, 0, 0, 0) url('<?php echo ot_get_option('here_bout_title_back_image') ?>') no-repeat scroll center center;" <?php } ?> ><?php echo ot_get_option('here_about_title'); ?></h2>
+                    <?php echo do_shortcode(ot_get_option('here_about_form_shortcode')); ?>
                 </div>
             </div>
         </div>

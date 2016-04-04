@@ -36,21 +36,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php bloginfo('home'); ?>"><img src="<?php echo ot_get_option('logo'); ?>"></a>
+                    <a class="navbar-brand" href="<?php bloginfo('home'); ?>"><img class="lg" src="<?php echo ot_get_option('logo'); ?>"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
-
-                    <ul class="nav navbar-nav navbar-right" style="margin-right:10px;">
-                    
-                        <li><a href="<?php echo ot_get_option('facebooklink'); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="<?php echo ot_get_option('twitterlink'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="<?php echo ot_get_option('skypelink'); ?>" target="_blank"><i class="fa fa-skype"></i></a></li>
-                        <li><a href="<?php echo ot_get_option('googlepluslink'); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="<?php echo ot_get_option('linkedinlink'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-
-                    </ul>
                     <div class="clearfix"></div>
-
                     <?php
                         wp_nav_menu( array(
                         'menu'              => 'header menu',

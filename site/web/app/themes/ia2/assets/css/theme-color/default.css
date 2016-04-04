@@ -4,15 +4,15 @@ Author URI : http://www.markups.io/
 ========================================*/
 
 .header-content h2 p {
-  color: #FF0000;
+  color: #ec0e2a;
   font-weight:900;
 }
 .knowmore-btn:hover,
 .knowmore-btn:focus,
 .download-btn:hover,
 .download-btn:focus{
-  background-color: #ff0000;
-  border-color: #ff0000;
+  background-color: #cd152c;
+  border-color: #cd152c;
 }
 .main-nav li a:hover{
   color: #b13847;
@@ -60,8 +60,8 @@ Author URI : http://www.markups.io/
 }
 .button-default:hover,
 .button-default:focus {
-  border-color: #b13847 !important;
-  background-color: #b13847 !important;  
+  border-color: #cd152c!important;
+  background-color: #cd152c!important;  
 }
 .introduction-btn {
   background-color: rgba(0, 217, 153, 0.8);
@@ -115,7 +115,7 @@ Author URI : http://www.markups.io/
   color: #b13847;
 }
 .contact-form .form-control:focus {
-  border-color: #11749e;   
+  border-color: #cd152c;   
 } 
 .portfolio-menu ul li:hover{
   color: #b13847;
@@ -167,19 +167,19 @@ Author URI : http://www.markups.io/
   color: #b13847;
 }
 .scrollToTop {  
-  color: #11749e;  
+  color: #cd152c;  
 }
 .scrollToTop:hover,
 .scrollToTop:focus{  
-  background-color: #11749e; 
+  background-color: #cd152c; 
 }
 .loader {  
   background: #b13847;
-  background: -moz-linear-gradient(left, #b13847 10%, rgba(255, 255, 255, 0) 42%);
-  background: -webkit-linear-gradient(left, #b13847 10%, rgba(255, 255, 255, 0) 42%);
-  background: -o-linear-gradient(left, #b13847 10%, rgba(255, 255, 255, 0) 42%);
-  background: -ms-linear-gradient(left, #b13847 10%, rgba(255, 255, 255, 0) 42%);
-  background: linear-gradient(to right, #b13847 10%, rgba(255, 255, 255, 0) 42%);  
+  background: -moz-linear-gradient(left, #cd152c 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #cd152c 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #cd152c 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #cd152c 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #cd152c 10%, rgba(255, 255, 255, 0) 42%);  
 }
 .loader:before {
   background: #b13847; 
